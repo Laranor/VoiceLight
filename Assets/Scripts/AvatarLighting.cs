@@ -26,7 +26,7 @@ public class AvatarLighting : MonoBehaviour
     [SerializeField] private float maxIntensity = 2f;
     [SerializeField] private float minIntensity = 1f;
     [SerializeField] private float degressivIntensity = 0.5f;
-    [SerializeField] private float diviseur = 500f;
+    [SerializeField] private float diviseur = 4f;
 
     void Start()
     {
@@ -38,14 +38,14 @@ public class AvatarLighting : MonoBehaviour
     void Update()
     {
         AnalyzeSound();
-        multiplier = (DbValue + 80)/diviseur;
+        multiplier = ((DbValue + 80)/diviseur);
         avatarLight.range = avatarLight.intensity * 5;
 
         if (DbValue > seuilSound && avatarLight.intensity < maxIntensity)
         {
-            avatarLight.intensity += multiplier /** Time.deltaTime*/;
+            avatarLight.intensity += multiplier * Time.deltaTime;
         }
-        if (avatarLight.intensity > minIntensity && DbValue < seuilSound)
+        if (avatarLight.intensity > minIntensity /*&& DbValue < seuilSound*/)
         {
             avatarLight.intensity -= degressivIntensity * Time.deltaTime;
         }
