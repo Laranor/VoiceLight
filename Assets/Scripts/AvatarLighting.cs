@@ -8,11 +8,10 @@ public class AvatarLighting : MonoBehaviour
     public AudioSource audioSource;
     public Light avatarLight;
 
-    public float multiplier;
+    
 
     public float RmsValue;
     public float DbValue;
-    public float PitchValue;
 
     private const int QSamples = 1024;
     private const float RefValue = 0.1f;
@@ -21,6 +20,13 @@ public class AvatarLighting : MonoBehaviour
     float[] _samples;
     private float[] _spectrum;
     private float _fSample;
+
+    [SerializeField] private float multiplier;
+    [SerializeField] private float seuilSound = -20f;
+    [SerializeField] private float maxIntensity = 2f;
+    [SerializeField] private float minIntensity = 1f;
+    [SerializeField] private float degressivIntensity = 0.5f;
+    [SerializeField] private float diviseur = 500f;
 
     void Start()
     {
@@ -32,16 +38,16 @@ public class AvatarLighting : MonoBehaviour
     void Update()
     {
         AnalyzeSound();
-        multiplier = (DbValue + 80)/500;
+        multiplier = (DbValue + 80)/diviseur;
         avatarLight.range = avatarLight.intensity * 5;
 
-        if (DbValue > -20 && avatarLight.intensity < 2)
+        if (DbValue > seuilSound && avatarLight.intensity < maxIntensity)
         {
             avatarLight.intensity += multiplier /** Time.deltaTime*/;
         }
-        if (avatarLight.intensity > 1)
+        if (avatarLight.intensity > minIntensity && DbValue < seuilSound)
         {
-            avatarLight.intensity -= 0.5f * Time.deltaTime;
+            avatarLight.intensity -= degressivIntensity * Time.deltaTime;
         }
     }
 

@@ -13,7 +13,7 @@ public class MicInput : MonoBehaviour
     public string _selectedDevice;
     public AudioMixerGroup _mixerGroupMicrophone, _mixerGroupMaster;
 
-    void Start()
+    void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
         if(_useMicrophone)
@@ -22,12 +22,8 @@ public class MicInput : MonoBehaviour
             {
                 _selectedDevice = Microphone.devices[0].ToString();
                 _audioSource.outputAudioMixerGroup = _mixerGroupMicrophone;
-                _audioSource.clip = Microphone.Start(_selectedDevice, true, 1, AudioSettings.outputSampleRate);
+                _audioSource.clip = Microphone.Start(_selectedDevice, true, 999, AudioSettings.outputSampleRate);
             }
-            else
-            {
-                _useMicrophone = false;
-            } 
         }
         if(!_useMicrophone)
         {
