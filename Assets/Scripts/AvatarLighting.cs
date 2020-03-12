@@ -5,10 +5,9 @@ using UnityEngine.Audio;
 
 public class AvatarLighting : MonoBehaviour
 {
+    [FMODUnity.EventRef]
     public AudioSource audioSource;
     public Light avatarLight;
-
-    
 
     public float RmsValue;
     public float DbValue;
@@ -28,27 +27,41 @@ public class AvatarLighting : MonoBehaviour
     [SerializeField] private float degressivIntensity = 0.5f;
     [SerializeField] private float diviseur = 4f;
 
+    FMOD.Studio.EventInstance lightSound;
+    private float soundIntensity;
+
     void Start()
     {
         _samples = new float[QSamples];
         _spectrum = new float[QSamples];
         _fSample = AudioSettings.outputSampleRate;
+
+        lightSound = FMODUnity.RuntimeManager.CreateInstance("event:/Light_Intensity_Feedback");
+        lightSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        lightSound.start();
     }
 
     void Update()
     {
+        
+        
         AnalyzeSound();
         multiplier = ((DbValue + 80)/diviseur);
         avatarLight.range = avatarLight.intensity * 5;
-
         if (DbValue > seuilSound && avatarLight.intensity < maxIntensity)
         {
-            avatarLight.intensity += multiplier * Time.deltaTime;
+            //avatarLight.intensity += multiplier * Time.deltaTime;
+            avatarLight.intensity = multiplier;
+            soundIntensity = multiplier / 3.75f;
         }
-        if (avatarLight.intensity > minIntensity /*&& DbValue < seuilSound*/)
+        if (avatarLight.intensity > minIntensity && DbValue < seuilSound)
         {
             avatarLight.intensity -= degressivIntensity * Time.deltaTime;
+            soundIntensity -= degressivIntensity/3.75f * Time.deltaTime;
         }
+
+        //Light sound
+        lightSound.setParameterByName("Intensity", soundIntensity);
     }
 
     void AnalyzeSound()
