@@ -157,9 +157,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{fd4c87f9-9b74-462b-87ab-977e2033d5df}" />
 	<object class="SingleSound" id="{403806b6-6224-478c-9c69-2dd9c0d37dd0}">
-		<property name="start">
-			<value>0.48313776374596606</value>
-		</property>
 		<property name="length">
 			<value>2.5322227829647792</value>
 		</property>
@@ -188,7 +185,7 @@
 	</object>
 	<object class="SingleSound" id="{413d838a-2304-4185-aa8f-50aeaa35810a}">
 		<property name="start">
-			<value>2.4300000000000002</value>
+			<value>1.9468622362540338</value>
 		</property>
 		<property name="length">
 			<value>6.8746485260770971</value>
@@ -221,7 +218,7 @@
 	</object>
 	<object class="SingleSound" id="{77d5a1b2-ca22-44d1-b82b-466d98820dba}">
 		<property name="start">
-			<value>2.4300000000000002</value>
+			<value>1.9468622362540338</value>
 		</property>
 		<property name="length">
 			<value>6.8746485260770971</value>
@@ -254,7 +251,7 @@
 	</object>
 	<object class="SingleSound" id="{66e26c97-b226-46de-a117-549fc8a507fd}">
 		<property name="start">
-			<value>1.3970468242711878</value>
+			<value>0.91390906052522181</value>
 		</property>
 		<property name="length">
 			<value>8.9405548775347228</value>
@@ -290,7 +287,7 @@
 	</object>
 	<object class="SingleSound" id="{6c9a6f87-04aa-44c5-adf2-23d37dcb6ce2}">
 		<property name="start">
-			<value>1.8208224861086499</value>
+			<value>1.337684722362684</value>
 		</property>
 		<property name="length">
 			<value>7.8968974965887089</value>
@@ -321,7 +318,7 @@
 	</object>
 	<object class="SingleSound" id="{f0f1e941-b2bf-4141-ac00-848f908cf86e}">
 		<property name="start">
-			<value>8.9945338810047826</value>
+			<value>8.5113961172588173</value>
 		</property>
 		<property name="length">
 			<value>5.031519274376417</value>

@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Cave/SonPourLeProto
+  Event: 
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -520,8 +520,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &246390922
 GameObject:
   m_ObjectHideFlags: 0
@@ -7991,6 +7991,8 @@ MonoBehaviour:
   intensity: 0
   time: 0
   opening: 0
+  timeTarget: 2
+  intensityTarget: 2
 --- !u!1 &1881030466
 GameObject:
   m_ObjectHideFlags: 0
@@ -9659,4 +9661,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avatarLight: {fileID: 790803140}
-  lightValue: 0

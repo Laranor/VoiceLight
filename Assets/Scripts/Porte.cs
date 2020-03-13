@@ -9,6 +9,8 @@ public class Porte : MonoBehaviour
     [SerializeField] private float time = 0;
     [SerializeField] private bool opening = false;
 
+    [SerializeField] private float timeWait = 0;
+
     [SerializeField] private float timeTarget = 2;
     [SerializeField] private float intensityTarget = 2;
 
@@ -17,29 +19,38 @@ public class Porte : MonoBehaviour
     {
         if(opening)
         {
-            var z = UnityEditor.TransformUtils.GetInspectorRotation(gameObject.transform).z;
-            gameObject.transform.Rotate(new Vector3(0, 1, 0), Space.World);
-            if (z >= 130)
-                enabled = false;
+            timeWait += Time.deltaTime;
+            if(timeWait > 2.5f)
+            {
+                var z = UnityEditor.TransformUtils.GetInspectorRotation(gameObject.transform).z;
+                gameObject.transform.Rotate(new Vector3(0, 0.18f, 0), Space.World);
+                if (z >= 130)
+                    enabled = false;
+            }
+            
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "Light")
+        if(!opening)
         {
-            intensity = avatarLight.intensity - (avatarLight.intensity * ((other.transform.position - transform.position).magnitude / avatarLight.range));
-            if (intensity > intensityTarget)
+            if (other.gameObject.name == "Light")
             {
-                time += Time.deltaTime;
-                if (time > timeTarget)
+                intensity = avatarLight.intensity - (avatarLight.intensity * ((other.transform.position - transform.position).magnitude / avatarLight.range));
+                if (intensity > intensityTarget)
                 {
-                    //gameObject.transform.eulerAngles = new Vector3(-90, 0, 120);
-                    opening = true;
+                    time += Time.deltaTime;
+                    if (time > timeTarget)
+                    {
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/01_A_IMPLEMENTER/Door_Open_01", transform.position);
+                        opening = true;
+                    }
                 }
+                else
+                    time = 0;
             }
-            else
-                time = 0;
         }
+
     }
 }
