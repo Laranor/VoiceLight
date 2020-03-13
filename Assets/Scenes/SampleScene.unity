@@ -294,10 +294,10 @@ GameObject:
   m_Component:
   - component: {fileID: 116108698}
   - component: {fileID: 116108699}
-  - component: {fileID: 116108701}
   - component: {fileID: 116108700}
-  - component: {fileID: 116108703}
   - component: {fileID: 116108702}
+  - component: {fileID: 116108701}
+  - component: {fileID: 116108703}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -337,12 +337,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 116108703}
   avatarLight: {fileID: 790803140}
-  RmsValue: 0
   DbValue: 0
   multiplier: 0
-  seuilSound: 0
-  maxIntensity: 10
-  minIntensity: 1
+  seuilSound: -10
+  maxIntensity: 4
+  minIntensity: 0
   degressivIntensity: 1
   diviseur: 25
 --- !u!114 &116108700
@@ -506,7 +505,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14482
+  m_Name: pb_Mesh14856
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -669,7 +668,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14532
+  m_Name: pb_Mesh14906
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1087,7 +1086,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14568
+  m_Name: pb_Mesh14942
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2719,9 +2718,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1881030467}
+  - component: {fileID: 1881030470}
   - component: {fileID: 1881030469}
   - component: {fileID: 1881030468}
-  - component: {fileID: 1881030470}
+  - component: {fileID: 1881030471}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2743,14 +2743,19 @@ Transform:
   m_Father: {fileID: 116108698}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1881030468
-AudioListener:
+--- !u!114 &1881030468
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881030466}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!20 &1881030469
 Camera:
   m_ObjectHideFlags: 0
@@ -2806,8 +2811,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dda5cfff1e2fc047804718887b0f235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 200
   playerBody: {fileID: 116108698}
+--- !u!81 &1881030471
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881030466}
+  m_Enabled: 1
 --- !u!1 &2002612761
 GameObject:
   m_ObjectHideFlags: 0
@@ -3104,17 +3117,9 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 04000000
-  m_SelectedEdges:
-  - a: 16
-    b: 17
-  - a: 18
-    b: 16
-  - a: 17
-    b: 19
-  - a: 19
-    b: 18
-  m_SelectedVertices: 10000000110000001200000013000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!23 &2095925658
 MeshRenderer:
   m_ObjectHideFlags: 0

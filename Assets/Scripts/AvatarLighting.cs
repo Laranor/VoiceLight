@@ -6,19 +6,15 @@ using UnityEngine.Audio;
 public class AvatarLighting : MonoBehaviour
 {
     [FMODUnity.EventRef]
-    public AudioSource audioSource;
-    public Light avatarLight;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private Light avatarLight;
 
-    public float RmsValue;
+    private float RmsValue;
     public float DbValue;
 
     private const int QSamples = 1024;
     private const float RefValue = 0.1f;
-    private const float Threshold = 0.02f;
-
     float[] _samples;
-    private float[] _spectrum;
-    private float _fSample;
 
     [SerializeField] private float multiplier;
     [SerializeField] private float seuilSound = -20f;
@@ -33,37 +29,37 @@ public class AvatarLighting : MonoBehaviour
     void Start()
     {
         _samples = new float[QSamples];
-        _spectrum = new float[QSamples];
-        _fSample = AudioSettings.outputSampleRate;
 
-        lightSound = FMODUnity.RuntimeManager.CreateInstance("event:/Light_Intensity_Feedback");
+        //Initialisation du son d'ambiance
+        lightSound = FMODUnity.RuntimeManager.CreateInstance("event:/SonPourLeProto");
         lightSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         lightSound.start();
     }
 
     void Update()
     {
-        
-        
         AnalyzeSound();
         multiplier = ((DbValue + 80)/diviseur);
         avatarLight.range = avatarLight.intensity * 5;
         if (DbValue > seuilSound && avatarLight.intensity < maxIntensity)
         {
-            //avatarLight.intensity += multiplier * Time.deltaTime;
+            //Lumière en fonction des decibels
             avatarLight.intensity = multiplier;
+            //Paramètre du son à changer
             soundIntensity = multiplier / 3.75f;
         }
         if (avatarLight.intensity > minIntensity && DbValue < seuilSound)
         {
+            //Degressif quand pas de lumière
             avatarLight.intensity -= degressivIntensity * Time.deltaTime;
             soundIntensity -= degressivIntensity/3.75f * Time.deltaTime;
         }
 
-        //Light sound
+        //Son en fonction de la lumière
         lightSound.setParameterByName("Intensity", soundIntensity);
     }
 
+    //Récupération des décibels du micro
     void AnalyzeSound()
     {
         audioSource.GetOutputData(_samples, 0); // fill array with samples
