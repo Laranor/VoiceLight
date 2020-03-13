@@ -31,7 +31,7 @@ public class AvatarLighting : MonoBehaviour
         _samples = new float[QSamples];
 
         //Initialisation du son d'ambiance
-        lightSound = FMODUnity.RuntimeManager.CreateInstance("event:/SonPourLeProto");
+        lightSound = FMODUnity.RuntimeManager.CreateInstance("event:/Cave/SonPourLeProto");
         lightSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         lightSound.start();
     }
@@ -46,13 +46,13 @@ public class AvatarLighting : MonoBehaviour
             //Lumière en fonction des decibels
             avatarLight.intensity = multiplier;
             //Paramètre du son à changer
-            soundIntensity = multiplier / 3.75f;
+            soundIntensity = multiplier;
         }
         if (avatarLight.intensity > minIntensity && DbValue < seuilSound)
         {
             //Degressif quand pas de lumière
             avatarLight.intensity -= degressivIntensity * Time.deltaTime;
-            soundIntensity -= degressivIntensity/3.75f * Time.deltaTime;
+            soundIntensity -= degressivIntensity * Time.deltaTime;
         }
 
         //Son en fonction de la lumière
