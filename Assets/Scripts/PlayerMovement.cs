@@ -4,25 +4,33 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
-    public float jumpHeight = 2f;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpHeight = 2f;
 
-    private Rigidbody rb;
-    private Vector3 inputs = Vector3.zero;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Vector3 inputs = Vector3.zero;
     
-    public bool isGrounded;
-    public float groundDistance = 0.2f;
-    public Transform groundCheck;
-    public LayerMask dontReloadMask;
+    [SerializeField] private bool isGrounded;
+    [SerializeField] private float groundDistance = 0.2f;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask dontReloadMask;
 
-    public bool isBeingLaunched;
-    public float launchTime;
+    [SerializeField] private bool isBeingLaunched;
+    [SerializeField] private float launchTime;
     private float launchTimer;
 
-    public float fallSpeed = 10;
+    [SerializeField] private float fallSpeed = 10;
+
+    private FMOD.Studio.EventInstance walkSound;
+    private FMOD.Studio.EventInstance jump;
+    [SerializeField] private bool walking = true;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        walkSound = FMODUnity.RuntimeManager.CreateInstance("event:/01_A_IMPLEMENTER/Walk_01");
+        jump = FMODUnity.RuntimeManager.CreateInstance("event:/01_A_IMPLEMENTER/Jump_01");
     }
 
     void Update()
@@ -43,9 +51,39 @@ public class PlayerMovement : MonoBehaviour
         inputs = Vector3.zero;
         inputs.x = Input.GetAxis("Horizontal");
         inputs.z = Input.GetAxis("Vertical");
+        walkSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            if(!walking)
+            {
+                walkSound.start();
+                walking = true;
+            }
+        }
+        else
+        {
+            walking = false;
+            walkSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+            
+        if(Input.GetKey(KeyCode.LeftControl))
+        {
+            speed = 7.5f;
+            walkSound.setParameterByName("Parameter 3", 1);
+        }
+        else
+        {
+            speed = 5f;
+            walkSound.setParameterByName("Parameter 3", 0);
+        }
 
+        jump.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         if (Input.GetButtonDown("Jump") && isGrounded)
+        {
             rb.AddForce(Vector3.up * Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
+            jump.setParameterByName("Jump", 0);
+            jump.start();
+        }
 
         if (isBeingLaunched)
         {
@@ -58,7 +96,19 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(isGrounded)
+        {
+            if(collision.gameObject.name == "Plane")
+            {
+                jump.setParameterByName("Jump", 1);
+                jump.start();
+            }
+        }
+    }
+
     void FixedUpdate()
     {
         inputs = transform.TransformDirection(inputs);

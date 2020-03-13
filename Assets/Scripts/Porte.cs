@@ -23,7 +23,7 @@ public class Porte : MonoBehaviour
             if(timeWait > 2.5f)
             {
                 var z = UnityEditor.TransformUtils.GetInspectorRotation(gameObject.transform).z;
-                gameObject.transform.Rotate(new Vector3(0, 0.18f, 0), Space.World);
+                gameObject.transform.Rotate(new Vector3(0, 0.17f, 0), Space.World);
                 if (z >= 130)
                     enabled = false;
             }
