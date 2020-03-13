@@ -11,10 +11,14 @@ public class AvatarLighting : MonoBehaviour
 
     private float RmsValue;
     public float DbValue;
+    public float PitchValue;
 
     private const int QSamples = 1024;
     private const float RefValue = 0.1f;
+    private const float Threshold = 0.02f;
     float[] _samples;
+    private float[] _spectrum;
+    private float _fSample;
 
     [SerializeField] private float multiplier;
     [SerializeField] private float seuilSound = -20f;
@@ -29,6 +33,8 @@ public class AvatarLighting : MonoBehaviour
     void Start()
     {
         _samples = new float[QSamples];
+        _spectrum = new float[QSamples];
+        _fSample = AudioSettings.outputSampleRate;
 
         //Initialisation du son d'ambiance
         lightSound = FMODUnity.RuntimeManager.CreateInstance("event:/Cave/SonPourLeProto");
@@ -50,7 +56,7 @@ public class AvatarLighting : MonoBehaviour
         }
         if (avatarLight.intensity > minIntensity && DbValue < seuilSound)
         {
-            //Degressif quand pas de lumière
+            //Degressif quand pas de lumière 
             avatarLight.intensity -= degressivIntensity * Time.deltaTime;
             soundIntensity -= degressivIntensity * Time.deltaTime;
         }
@@ -73,6 +79,25 @@ public class AvatarLighting : MonoBehaviour
         DbValue = 20 * Mathf.Log10(RmsValue / RefValue); // calculate dB
         
         if (DbValue < -80) DbValue = -80; // clamp it to -80dB min
-        Debug.Log(DbValue);                        // get sound spectrum
+        Debug.Log(DbValue);
+        audioSource.GetSpectrumData(_spectrum, 0, FFTWindow.BlackmanHarris);// get sound spectrum
+        float maxV = 0;
+        var maxN = 0;
+        for (i = 0; i < QSamples; i++)
+        { // find max 
+            if (!(_spectrum[i] > maxV) || !(_spectrum[i] > Threshold))
+                continue;
+
+            maxV = _spectrum[i];
+            maxN = i; // maxN is the index of max
+        }
+        float freqN = maxN; // pass the index to a float variable
+        if (maxN > 0 && maxN < QSamples - 1)
+        { // interpolate index using neighbours
+            var dL = _spectrum[maxN - 1] / _spectrum[maxN];
+            var dR = _spectrum[maxN + 1] / _spectrum[maxN];
+            freqN += 0.5f * (dR * dR - dL * dL);
+        }
+        PitchValue = freqN * (_fSample / 2) / QSamples; // convert index to frequency
     }
 }

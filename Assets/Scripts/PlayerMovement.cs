@@ -20,9 +20,6 @@ public class PlayerMovement : MonoBehaviour
     private float launchTimer;
 
     public float fallSpeed = 10;
-
-    public bool riding = false;
-    public Transform ridingObject;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
