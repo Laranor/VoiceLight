@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if(isGrounded)
         {
@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
                 jump.start();
             }
         }
-    }
+    }*/
 
     void FixedUpdate()
     {

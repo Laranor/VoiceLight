@@ -68,8 +68,8 @@
 	<object class="MarkerTrack" id="{252b2195-b2c4-4c0f-8af0-367973e71dff}" />
 	<object class="GroupTrack" id="{17b123e6-2093-4808-828f-75541681368e}">
 		<relationship name="modules">
-			<destination>{e8a30865-fb0f-497a-936b-1f269c17cfb1}</destination>
-			<destination>{e65cb7c2-4fb5-4cb3-aa1f-b2d96bdd9ab9}</destination>
+			<destination>{04b7b034-ffbd-475c-9781-d2ace9a77947}</destination>
+			<destination>{0532635c-5e62-4435-98f3-76c2e2bd56dc}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{13dd9869-16cb-4f1b-9865-25568ecaf800}</destination>
@@ -78,8 +78,8 @@
 	<object class="Timeline" id="{fc900b29-0b6d-4749-ae53-ec14b1ff48ee}" />
 	<object class="ParameterProxy" id="{f185508c-1f49-4d85-b246-606689fa359f}">
 		<relationship name="modules">
-			<destination>{e8a30865-fb0f-497a-936b-1f269c17cfb1}</destination>
-			<destination>{e65cb7c2-4fb5-4cb3-aa1f-b2d96bdd9ab9}</destination>
+			<destination>{04b7b034-ffbd-475c-9781-d2ace9a77947}</destination>
+			<destination>{0532635c-5e62-4435-98f3-76c2e2bd56dc}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{9138e83c-2c92-486c-a586-6a67ec5c38f3}</destination>
@@ -102,23 +102,23 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3b20dfe7-fc2d-4b58-858d-43ac4bb044a2}" />
-	<object class="SingleSound" id="{e8a30865-fb0f-497a-936b-1f269c17cfb1}">
-		<relationship name="audioFile">
-			<destination>{7d3f702f-675c-46b2-814c-23347cd95e70}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{e65cb7c2-4fb5-4cb3-aa1f-b2d96bdd9ab9}">
+	<object class="SingleSound" id="{04b7b034-ffbd-475c-9781-d2ace9a77947}">
 		<property name="start">
 			<value>1</value>
 		</property>
-		<property name="startOffset">
-			<value>43</value>
-		</property>
 		<relationship name="audioFile">
-			<destination>{1589091a-43f4-48d7-ac42-1e07854f5c78}</destination>
+			<destination>{1a07411c-1c1d-46b6-bae8-cefb14f9dbd1}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{0532635c-5e62-4435-98f3-76c2e2bd56dc}">
+		<relationship name="audioFile">
+			<destination>{f4856515-b961-4bdb-8694-72a0d789f6dd}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{13dd9869-16cb-4f1b-9865-25568ecaf800}">
+		<property name="volume">
+			<value>-10.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
