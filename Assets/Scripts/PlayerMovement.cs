@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float fallSpeed = 10;
 
     private FMOD.Studio.EventInstance walkSound;
-    private FMOD.Studio.EventInstance jump;
     [SerializeField] private bool walking = true;
 
     void Start()
@@ -30,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         walkSound = FMODUnity.RuntimeManager.CreateInstance("event:/01_A_IMPLEMENTER/Walk_01");
-        jump = FMODUnity.RuntimeManager.CreateInstance("event:/01_A_IMPLEMENTER/Jump_01");
     }
 
     void Update()
@@ -52,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         inputs.x = Input.GetAxis("Horizontal");
         inputs.z = Input.GetAxis("Vertical");
         walkSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.Z) && isGrounded || Input.GetKey(KeyCode.Q) && isGrounded || Input.GetKey(KeyCode.S) && isGrounded || Input.GetKey(KeyCode.D) && isGrounded)
         {
             if(!walking)
             {
@@ -77,12 +75,10 @@ public class PlayerMovement : MonoBehaviour
             walkSound.setParameterByName("Parameter 3", 0);
         }
 
-        jump.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector3.up * Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
-            jump.setParameterByName("Jump", 0);
-            jump.start();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/01_A_IMPLEMENTER/Jump_01", gameObject.transform.position);
         }
 
         if (isBeingLaunched)
@@ -97,17 +93,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /*private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(isGrounded)
+        if (collision.gameObject.name == "Ground")
         {
-            if(collision.gameObject.name == "Plane")
-            {
-                jump.setParameterByName("Jump", 1);
-                jump.start();
-            }
+            FMODUnity.RuntimeManager.PlayOneShot("event:/01_A_IMPLEMENTER/Land_01", gameObject.transform.position);
         }
-    }*/
+    }
 
     void FixedUpdate()
     {
