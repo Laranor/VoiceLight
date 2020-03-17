@@ -12,11 +12,11 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] private bool isGrounded;
     [SerializeField] private float groundDistance = 0.2f;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask dontReloadMask;
+    public Transform groundCheck;
+    public LayerMask dontReloadMask;
 
     [SerializeField] private bool isBeingLaunched;
-    [SerializeField] private float launchTime;
+    [SerializeField] private float launchTime = 0;
     private float launchTimer;
 
     [SerializeField] private float fallSpeed = 10;

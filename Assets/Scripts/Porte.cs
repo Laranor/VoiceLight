@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Porte : MonoBehaviour
 {
-    [SerializeField] private Light avatarLight;
+    public Light avatarLight;
     [SerializeField] private float intensity;
     [SerializeField] private float time = 0;
     [SerializeField] private bool opening = false;

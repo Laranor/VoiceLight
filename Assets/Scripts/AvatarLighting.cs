@@ -6,8 +6,8 @@ using UnityEngine.Audio;
 public class AvatarLighting : MonoBehaviour
 {
     [FMODUnity.EventRef]
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private Light avatarLight;
+    public AudioSource audioSource;
+    public Light avatarLight;
 
     private float RmsValue;
     public float DbValue;

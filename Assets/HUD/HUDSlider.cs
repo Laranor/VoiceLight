@@ -11,7 +11,7 @@ public class HUDSlider : MonoBehaviour
     public RectTransform sliderContainer;
 
     private float minDistance;
-    private float maxDistance;
+    private float maxDistance = 0;
     private float sliderSize;
 
     public Image blueImage;

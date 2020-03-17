@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightSphere : MonoBehaviour
 {
-    [SerializeField] private Light avatarLight;
+    public Light avatarLight;
 
     // Update is called once per frame
     void Update()
