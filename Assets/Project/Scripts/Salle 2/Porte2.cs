@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Porte : MonoBehaviour
+public class Porte2 : MonoBehaviour
 {
     [SerializeField] private float timeWait = 0;
     [SerializeField] private bool sound = false;
-    public Lock lock1;
-    public Lock lock2;
-    public Lock lock3;
-    public Lock lock4;
-    public Lock lock5;
+
+    public Lock2 lock1;
+    public Lock2 lock2;
+    public Lock2 lock3;
+    public Lock2 lock4;
+    public Lock2 lock5;
 
     // Update is called once per frame
     void Update()
     {
-        if(!lock1.locked && !lock2.locked && !lock3.locked && !lock4.locked && !lock5.locked)
+        if (!lock1.locked && !lock2.locked && !lock3.locked && !lock4.locked && !lock5.locked)
         {
-            if(!sound)
+            if (!sound)
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/01_A_IMPLEMENTER/Door_Open_01", transform.position);
                 sound = true;

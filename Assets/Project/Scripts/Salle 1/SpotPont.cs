@@ -17,10 +17,7 @@ public class SpotPont : MonoBehaviour
     public Pont pont3;
     public Pont pont4;
     public Pont pont5;
-    private void Update()
-    {
-        
-    }
+
     private void OnCollisionStay(Collision collision)
     {
         intensity = collision.gameObject.GetComponentInChildren<Light>().intensity;
