@@ -7,6 +7,8 @@ public class Porte2 : MonoBehaviour
     [SerializeField] private float timeWait = 0;
     [SerializeField] private bool sound = false;
 
+    [SerializeField] private float timeToStop = 0;
+
     public Lock2 lock1;
     public Lock2 lock2;
     public Lock2 lock3;
@@ -14,7 +16,7 @@ public class Porte2 : MonoBehaviour
     public Lock2 lock5;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!lock1.locked && !lock2.locked && !lock3.locked && !lock4.locked && !lock5.locked)
         {
@@ -27,8 +29,9 @@ public class Porte2 : MonoBehaviour
             if (timeWait > 2.5f)
             {
                 var y = UnityEditor.TransformUtils.GetInspectorRotation(gameObject.transform).y;
-                gameObject.transform.Rotate(new Vector3(0, 0.17f, 0), Space.World);
-                if (y >= 140)
+                gameObject.transform.Rotate(new Vector3(0, 0.285f, 0), Space.World);
+                timeToStop += Time.deltaTime;
+                if (timeToStop >= 8.5f)
                 {
                     enabled = false;
                     lock1.enabled = false;

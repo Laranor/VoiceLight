@@ -40,6 +40,7 @@ public class LightCube : MonoBehaviour
                 Material mymat = GetComponent<Renderer>().material;
                 mymat.EnableKeyword("_EMISSION");
                 mymat.SetColor("_EmissionColor", Color.red);
+                enabled = false;
             }
         }
         if (gameObject.name == "LightCube2" && ((other.transform.position - transform.position).magnitude <= 4))
@@ -50,6 +51,7 @@ public class LightCube : MonoBehaviour
                 Material mymat = GetComponent<Renderer>().material;
                 mymat.EnableKeyword("_EMISSION");
                 mymat.SetColor("_EmissionColor", Color.yellow);
+                enabled = false;
             }
         }
         if (gameObject.name == "LightCube3" && ((other.transform.position - transform.position).magnitude <= 4))
@@ -60,6 +62,7 @@ public class LightCube : MonoBehaviour
                 Material mymat = GetComponent<Renderer>().material;
                 mymat.EnableKeyword("_EMISSION");
                 mymat.SetColor("_EmissionColor", Color.green);
+                enabled = false;
             }
         }
         if (gameObject.name == "LightCube4" && ((other.transform.position - transform.position).magnitude <= 4))
@@ -70,6 +73,7 @@ public class LightCube : MonoBehaviour
                 Material mymat = GetComponent<Renderer>().material;
                 mymat.EnableKeyword("_EMISSION");
                 mymat.SetColor("_EmissionColor", Color.blue);
+                enabled = false;
             }
         }
         if (gameObject.name == "LightCube5" && ((other.transform.position - transform.position).magnitude <= 4))
@@ -80,6 +84,7 @@ public class LightCube : MonoBehaviour
                 Material mymat = GetComponent<Renderer>().material;
                 mymat.EnableKeyword("_EMISSION");
                 mymat.SetColor("_EmissionColor", new Vector4(0.5f,0,1,1));
+                enabled = false;
             }
         }
     }
