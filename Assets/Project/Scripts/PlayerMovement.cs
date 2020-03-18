@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private FMOD.Studio.EventInstance walkSound;
     [SerializeField] private bool walking = true;
 
+    [SerializeField] private Transform checkpoint;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -33,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (transform.position.y <= -20)
+        {
+            transform.position = checkpoint.position;
+        }
         if (!isGrounded)    
         {
             if (transform.position.y < -70)
