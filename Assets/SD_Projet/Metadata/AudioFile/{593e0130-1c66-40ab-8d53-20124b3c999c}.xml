@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{593e0130-1c66-40ab-8d53-20124b3c999c}">
+		<property name="assetPath">
+			<value>Avatar/Bruit_de_pas_Eau.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>60.294761904761906</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{35a48e52-6134-4a31-adfc-d6068e673847}</destination>
+		</relationship>
+	</object>
+</objects>

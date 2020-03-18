@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{1b414260-0c10-4004-a874-8fea983b7222}">
+		<property name="name">
+			<value>Cubes</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ca174eef-3a1c-444f-ab4a-a5bb8ac53f26}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cf860d13-aedf-4746-b6fc-ab2ef6545b62}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cf860d13-aedf-4746-b6fc-ab2ef6545b62}">
+		<property name="maximum">
+			<value>9</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
