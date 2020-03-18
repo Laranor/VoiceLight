@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{dc9b34b6-8d13-480b-a977-00b9b611d636}">
+		<property name="assetPath">
+			<value>Exterieur/Oiseau.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>42.093687500000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{35a48e52-6134-4a31-adfc-d6068e673847}</destination>
+		</relationship>
+	</object>
+</objects>

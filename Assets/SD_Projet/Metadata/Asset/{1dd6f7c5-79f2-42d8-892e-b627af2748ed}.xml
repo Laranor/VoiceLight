@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{1dd6f7c5-79f2-42d8-892e-b627af2748ed}">
+		<property name="assetPath">
+			<value>Salle_de_Bain/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{35a48e52-6134-4a31-adfc-d6068e673847}</destination>
+		</relationship>
+	</object>
+</objects>
