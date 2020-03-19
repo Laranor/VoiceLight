@@ -28,7 +28,6 @@ public class Porte2 : MonoBehaviour
             timeWait += Time.deltaTime;
             if (timeWait > 2.5f)
             {
-                var y = UnityEditor.TransformUtils.GetInspectorRotation(gameObject.transform).y;
                 gameObject.transform.Rotate(new Vector3(0, 0.285f, 0), Space.World);
                 timeToStop += Time.deltaTime;
                 if (timeToStop >= 8.5f)

@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private FMOD.Studio.EventInstance walkSound;
     [SerializeField] private bool walking = true;
 
-    [SerializeField] private Transform checkpoint;
+    public Transform checkpoint;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
