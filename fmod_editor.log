@@ -7,13 +7,93 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001EFBE47F378 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000258AA3F8C38 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9127840
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87264
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005845AAEFBC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF94ABDC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF94ABDC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF94ABDC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF94ABDC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258A877D588
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='land1', format=2, channels=2, frequency=48000, lengthbytes=2944, lengthpcm=13429, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.297791.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9127840
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87264
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005845AAEFBC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF94ABDC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF94ABDC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF94ABDC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF94ABDC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258A877BAB8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='jump1', format=2, channels=2, frequency=48000, lengthbytes=3936, lengthpcm=18949, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.074585.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : SonPourLeProto (00000258D0140888)
+[LOG] SoundI::release                          :     SonPourLeProto (00000258A9770978)
+[LOG] SoundI::release                          :     SonPourLeProto (00000258D013FB08)
+[LOG] SoundI::release                          :  (00000258CFC207F8)
+[LOG] SoundI::release                          :     jump1 (00000258CFCFE0A8)
+[LOG] SoundI::release                          :  (00000258CFC21938)
+[LOG] SoundI::release                          :     land1 (00000258CFCFF5C8)
+[LOG] SoundI::release                          :  (0000025912774C98)
+[LOG] SoundI::release                          :     projetS2_02_walk_08 (00000258D0064238)
+[LOG] SoundI::release                          :  (00000258CFAE3E58)
+[LOG] SoundI::release                          :     projetS2_02_walk_09 (00000258A976F458)
+[LOG] SoundI::release                          :  (0000025912594988)
+[LOG] SoundI::release                          :     projetS2_02_walk_10 (00000258D0064A58)
+[LOG] SoundI::release                          :  (00000258CFAE28C8)
+[LOG] SoundI::release                          :     projetS2_02_walk_11 (00000258A976D8B8)
+[LOG] SoundI::release                          :  (00000258CFAE3B78)
+[LOG] SoundI::release                          :     projetS2_02_walk_12 (00000258A976EDD8)
+[LOG] SoundI::release                          :  (0000025917F2D9B8)
+[LOG] SoundI::release                          :     projetS2_02_walk_13 (00000258D0063EF8)
+[LOG] SoundI::release                          :  (00000259127739E8)
+[LOG] SoundI::release                          :     projetS2_02_walk_01 (00000258D0064F38)
+[LOG] SoundI::release                          :  (0000025917F2DC98)
+[LOG] SoundI::release                          :     projetS2_02_walk_02 (00000258D0064098)
+[LOG] SoundI::release                          :  (0000025912593F78)
+[LOG] SoundI::release                          :     projetS2_02_walk_03 (00000258D0062358)
+[LOG] SoundI::release                          :  (00000256E14271F8)
+[LOG] SoundI::release                          :     projetS2_02_walk_04 (00000258A976F798)
+[LOG] SoundI::release                          :  (0000025912594258)
+[LOG] SoundI::release                          :     projetS2_02_walk_05 (00000258D0064BF8)
+[LOG] SoundI::release                          :  (00000259125946A8)
+[LOG] SoundI::release                          :     projetS2_02_walk_06 (00000258D00650D8)
+[LOG] SoundI::release                          :  (00000256E14284A8)
+[LOG] SoundI::release                          :     projetS2_02_walk_07 (00000258A9770E58)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
@@ -24,4 +104,6 @@
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
