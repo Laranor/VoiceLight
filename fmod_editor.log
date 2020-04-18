@@ -2,12 +2,13 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20008 (108014), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=44100, nAvgBytesPerSec=352800, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] OutputWASAPI::init                       : Output buffer size: 3760 samples, latency: 0.00ms, period: 10.16ms, DSP buffer: 1024 * 4
+[WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000258AA3F8C38 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000224BE120A48 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,70 +21,67 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 9127840
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87264
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005845AAEFBC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000B351A7F22C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF94ABDC320
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF94ABDC2F0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF94ABDC3F0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF94ABDC4B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258A877D588
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE8D67C320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE8D67C2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE8D67C3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE8D67C4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000224A1830888
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='land1', format=2, channels=2, frequency=48000, lengthbytes=2944, lengthpcm=13429, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.297791.
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 9127840
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87264
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005845AAEFBC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000B351A7F22C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF94ABDC320
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF94ABDC2F0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF94ABDC3F0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF94ABDC4B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258A877BAB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE8D67C320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE8D67C2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE8D67C3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE8D67C4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000224A18333D8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='jump1', format=2, channels=2, frequency=48000, lengthbytes=3936, lengthpcm=18949, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.074585.
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] SoundI::release                          : SonPourLeProto (00000258D0140888)
-[LOG] SoundI::release                          :     SonPourLeProto (00000258A9770978)
-[LOG] SoundI::release                          :     SonPourLeProto (00000258D013FB08)
-[LOG] SoundI::release                          :  (00000258CFC207F8)
-[LOG] SoundI::release                          :     jump1 (00000258CFCFE0A8)
-[LOG] SoundI::release                          :  (00000258CFC21938)
-[LOG] SoundI::release                          :     land1 (00000258CFCFF5C8)
-[LOG] SoundI::release                          :  (0000025912774C98)
-[LOG] SoundI::release                          :     projetS2_02_walk_08 (00000258D0064238)
-[LOG] SoundI::release                          :  (00000258CFAE3E58)
-[LOG] SoundI::release                          :     projetS2_02_walk_09 (00000258A976F458)
-[LOG] SoundI::release                          :  (0000025912594988)
-[LOG] SoundI::release                          :     projetS2_02_walk_10 (00000258D0064A58)
-[LOG] SoundI::release                          :  (00000258CFAE28C8)
-[LOG] SoundI::release                          :     projetS2_02_walk_11 (00000258A976D8B8)
-[LOG] SoundI::release                          :  (00000258CFAE3B78)
-[LOG] SoundI::release                          :     projetS2_02_walk_12 (00000258A976EDD8)
-[LOG] SoundI::release                          :  (0000025917F2D9B8)
-[LOG] SoundI::release                          :     projetS2_02_walk_13 (00000258D0063EF8)
-[LOG] SoundI::release                          :  (00000259127739E8)
-[LOG] SoundI::release                          :     projetS2_02_walk_01 (00000258D0064F38)
-[LOG] SoundI::release                          :  (0000025917F2DC98)
-[LOG] SoundI::release                          :     projetS2_02_walk_02 (00000258D0064098)
-[LOG] SoundI::release                          :  (0000025912593F78)
-[LOG] SoundI::release                          :     projetS2_02_walk_03 (00000258D0062358)
-[LOG] SoundI::release                          :  (00000256E14271F8)
-[LOG] SoundI::release                          :     projetS2_02_walk_04 (00000258A976F798)
-[LOG] SoundI::release                          :  (0000025912594258)
-[LOG] SoundI::release                          :     projetS2_02_walk_05 (00000258D0064BF8)
-[LOG] SoundI::release                          :  (00000259125946A8)
-[LOG] SoundI::release                          :     projetS2_02_walk_06 (00000258D00650D8)
-[LOG] SoundI::release                          :  (00000256E14284A8)
-[LOG] SoundI::release                          :     projetS2_02_walk_07 (00000258A9770E58)
+[LOG] SoundI::release                          : SonPourLeProto (00000224BBF5C198)
+[LOG] SoundI::release                          :     SonPourLeProto (00000224BE126748)
+[LOG] SoundI::release                          :     SonPourLeProto (00000224BBF5BC88)
+[LOG] SoundI::release                          :  (00000222D862CE18)
+[LOG] SoundI::release                          :     jump1 (00000224A1B10478)
+[LOG] SoundI::release                          :  (00000222D862C6E8)
+[LOG] SoundI::release                          :     land1 (00000224BBAAEDE8)
+[LOG] SoundI::release                          :  (00000224C2990278)
+[LOG] SoundI::release                          :     projetS2_02_walk_08 (00000224C20A60B8)
+[LOG] SoundI::release                          :  (00000224C2403498)
+[LOG] SoundI::release                          :     projetS2_02_walk_09 (00000224BE127788)
+[LOG] SoundI::release                          :  (00000224C2403608)
+[LOG] SoundI::release                          :     projetS2_02_walk_10 (00000224C20A7AB8)
+[LOG] SoundI::release                          :  (00000224C2403328)
+[LOG] SoundI::release                          :     projetS2_02_walk_11 (00000224BE1275E8)
+[LOG] SoundI::release                          :  (00000224C24031B8)
+[LOG] SoundI::release                          :     projetS2_02_walk_12 (00000224BE126DC8)
+[LOG] SoundI::release                          :  (00000224C2403A58)
+[LOG] SoundI::release                          :     projetS2_02_walk_13 (00000224C20A56F8)
+[LOG] SoundI::release                          :  (00000224C2991808)
+[LOG] SoundI::release                          :     projetS2_02_walk_01 (00000224C20A63F8)
+[LOG] SoundI::release                          :  (00000224C298F9D8)
+[LOG] SoundI::release                          :     projetS2_02_walk_02 (00000224C20A5F18)
+[LOG] SoundI::release                          :  (00000224C24038E8)
+[LOG] SoundI::release                          :     projetS2_02_walk_03 (00000224C20A8478)
+[LOG] SoundI::release                          :  (00000224C298F6F8)
+[LOG] SoundI::release                          :     projetS2_02_walk_04 (00000224BE7AB4C8)
+[LOG] SoundI::release                          :  (00000224C298F588)
+[LOG] SoundI::release                          :     projetS2_02_walk_05 (00000224C20A6598)
+[LOG] SoundI::release                          :  (00000224C2992C28)
+[LOG] SoundI::release                          :     projetS2_02_walk_06 (00000224C20A6C18)
+[LOG] SoundI::release                          :  (00000224C298F138)
+[LOG] SoundI::release                          :     projetS2_02_walk_07 (00000224BE7AC848)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

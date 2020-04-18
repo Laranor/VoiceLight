@@ -5,10 +5,10 @@ using UnityEngine.Audio;
 
 public class AvatarLighting : MonoBehaviour
 {
+    public Decibel db;
     [FMODUnity.EventRef]
     public AudioSource audioSource;
     public Light avatarLight;
-
     private float RmsValue;
     public float DbValue;
     public float PitchValue;
@@ -45,9 +45,11 @@ public class AvatarLighting : MonoBehaviour
     void Update()
     {
         AnalyzeSound();
+        db.decibel = DbValue;
         multiplier = ((DbValue + 80)/diviseur);
         avatarLight.range = avatarLight.intensity * 5;
-        if (DbValue > seuilSound && avatarLight.intensity < maxIntensity)
+        // Lumière en temps réel
+        /*if (DbValue > seuilSound && avatarLight.intensity < maxIntensity)
         {
             //Lumière en fonction des decibels
             avatarLight.intensity = multiplier;
@@ -55,6 +57,21 @@ public class AvatarLighting : MonoBehaviour
             soundIntensity = multiplier;
         }
         if (avatarLight.intensity > minIntensity && DbValue < seuilSound)
+        {
+            //Degressif quand pas de lumière 
+            avatarLight.intensity -= degressivIntensity * Time.deltaTime;
+            soundIntensity -= degressivIntensity * Time.deltaTime;
+        }*/
+
+        // Lumière progressive
+        if (DbValue > seuilSound && avatarLight.intensity < maxIntensity)
+        {
+            //Lumière en fonction des decibels
+            avatarLight.intensity += multiplier;
+            //Paramètre du son à changer
+            soundIntensity += multiplier;
+        }
+        if (avatarLight.intensity > minIntensity /*&& DbValue < seuilSound*/)
         {
             //Degressif quand pas de lumière 
             avatarLight.intensity -= degressivIntensity * Time.deltaTime;
@@ -79,7 +96,7 @@ public class AvatarLighting : MonoBehaviour
         DbValue = 20 * Mathf.Log10(RmsValue / RefValue); // calculate dB
         
         if (DbValue < -80) DbValue = -80; // clamp it to -80dB min
-        Debug.Log(DbValue);
+        //Debug.Log(DbValue);
         audioSource.GetSpectrumData(_spectrum, 0, FFTWindow.BlackmanHarris);// get sound spectrum
         float maxV = 0;
         var maxN = 0;

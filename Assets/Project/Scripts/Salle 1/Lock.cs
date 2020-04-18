@@ -6,6 +6,7 @@ public class Lock : MonoBehaviour
 {
     public bool locked = true;
     public Light avatarLight;
+    public Light cubeLight;
     [SerializeField] private float intensity;
     [SerializeField] private float time = 0;
 
@@ -23,19 +24,22 @@ public class Lock : MonoBehaviour
         if(gameObject.name == "Cylinder1")
         {
             Unlocking(other.gameObject);
+            if (cubeLight.intensity > intensityTarget)
+                locked = false;
             if (transform.position.x <= -1.3f && !locked)
                 transform.position += new Vector3(0.01f, 0, 0);
         }
-        if (gameObject.name == "Cylinder2")
+        else if (gameObject.name == "Cylinder2")
         {
             if(!lock1.locked)
             {
                 Unlocking(other.gameObject);
+                
                 if (transform.position.x <= -1.3f && !locked)
                     transform.position += new Vector3(0.01f, 0, 0);
             }
         }
-        if (gameObject.name == "Cylinder3")
+        else if (gameObject.name == "Cylinder3")
         {
             if (!lock2.locked)
             {
@@ -44,7 +48,7 @@ public class Lock : MonoBehaviour
                     transform.position += new Vector3(0.01f, 0, 0);
             }
         }
-        if (gameObject.name == "Cylinder4")
+        else if (gameObject.name == "Cylinder4")
         {
             if (!lock3.locked)
             {
@@ -53,7 +57,7 @@ public class Lock : MonoBehaviour
                     transform.position += new Vector3(0.01f, 0, 0);
             }
         }
-        if (gameObject.name == "Cylinder5")
+        else if (gameObject.name == "Cylinder5")
         {
             if (!lock4.locked)
             {
@@ -72,6 +76,11 @@ public class Lock : MonoBehaviour
                 intensity = avatarLight.intensity - (avatarLight.intensity * ((light.transform.position - transform.position).magnitude / avatarLight.range));
                 if (intensity > intensityTarget)
                 {
+                    if (gameObject.name == "Cube (1)")
+                    {
+                        locked = false;
+                    }
+
                     time += Time.deltaTime;
                     if (time > timeTarget)
                     {

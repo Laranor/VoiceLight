@@ -15,9 +15,15 @@ public class Porte : MonoBehaviour
     public Lock lock4;
     public Lock lock5;
 
+    Animator animator;
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
+
         if(!lock1.locked && !lock2.locked && !lock3.locked && !lock4.locked && !lock5.locked)
         {
             if(!sound)
@@ -28,7 +34,7 @@ public class Porte : MonoBehaviour
             timeWait += Time.deltaTime;
             if (timeWait > 2.5f)
             {
-                gameObject.transform.Rotate(new Vector3(0, 0.285f, 0), Space.World);
+                animator.SetBool("Open", true);
                 timeToStop += Time.deltaTime;
                 if (timeToStop >= 8.5f)
                 {

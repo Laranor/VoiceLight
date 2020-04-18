@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
             speed = 5f;
             walkSound.setParameterByName("Parameter 3", 0);
         }
-
+        /*
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector3.up * Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
                 isBeingLaunched = false;
                 launchTimer = 0;
             }
-        }
+        }*/
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         inputs = transform.TransformDirection(inputs);
         
         rb.MovePosition(rb.position + inputs * speed * Time.fixedDeltaTime);
-        
+        /*
         //Air Movement
         if (Input.GetButton("Vertical") && !isGrounded && !isBeingLaunched)
         {
@@ -127,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
             newVelocity.y = rb.velocity.y;
             
             rb.velocity = newVelocity;
-        }
+        }*/
     }
 }
 
