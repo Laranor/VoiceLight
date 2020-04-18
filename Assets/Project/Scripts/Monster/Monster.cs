@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class Monster : MonoBehaviour
 {
     public Transform target;
+    public Transform monsterTarget;
     Vector3 destination;
     NavMeshAgent agent;
     float soundDetection;
@@ -20,7 +21,19 @@ public class Monster : MonoBehaviour
 
     void Update()
     {
-        target = detection.GetLoudestObject(detection.targets).transform;
+        if(detection.targets.Count > 0)
+        {
+            target = detection.GetLoudestObject(detection.targets).transform;
+            if (target.GetComponentInChildren<Light>())
+            {
+                if (target.GetComponentInChildren<Light>().intensity < 1)
+                    target = monsterTarget;
+            }
+        }
+        if (detection.targets.Count == 0)
+        {
+            target = monsterTarget;
+        }
         // Update destination if the target moves one unit
         if (Vector3.Distance(destination, target.position) > 1.0f)
         {

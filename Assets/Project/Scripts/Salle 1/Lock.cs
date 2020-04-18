@@ -29,7 +29,7 @@ public class Lock : MonoBehaviour
             if (transform.position.x <= -1.3f && !locked)
                 transform.position += new Vector3(0.01f, 0, 0);
         }
-        else if (gameObject.name == "Cylinder2")
+        if (gameObject.name == "Cylinder2")
         {
             if(!lock1.locked)
             {
@@ -39,7 +39,7 @@ public class Lock : MonoBehaviour
                     transform.position += new Vector3(0.01f, 0, 0);
             }
         }
-        else if (gameObject.name == "Cylinder3")
+        if (gameObject.name == "Cylinder3")
         {
             if (!lock2.locked)
             {
@@ -48,7 +48,7 @@ public class Lock : MonoBehaviour
                     transform.position += new Vector3(0.01f, 0, 0);
             }
         }
-        else if (gameObject.name == "Cylinder4")
+        if (gameObject.name == "Cylinder4")
         {
             if (!lock3.locked)
             {
@@ -57,7 +57,7 @@ public class Lock : MonoBehaviour
                     transform.position += new Vector3(0.01f, 0, 0);
             }
         }
-        else if (gameObject.name == "Cylinder5")
+        if (gameObject.name == "Cylinder5")
         {
             if (!lock4.locked)
             {
@@ -76,10 +76,6 @@ public class Lock : MonoBehaviour
                 intensity = avatarLight.intensity - (avatarLight.intensity * ((light.transform.position - transform.position).magnitude / avatarLight.range));
                 if (intensity > intensityTarget)
                 {
-                    if (gameObject.name == "Cube (1)")
-                    {
-                        locked = false;
-                    }
 
                     time += Time.deltaTime;
                     if (time > timeTarget)

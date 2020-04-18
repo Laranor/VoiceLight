@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 class TestAudio : MonoBehaviour
 {
     public Decibel db;
-    FMOD.Studio.EventInstance musicInstance;
+    public FMOD.Studio.EventInstance musicInstance;
     FMOD.DSP fft;
     const int WindowSize = 1024;
 
