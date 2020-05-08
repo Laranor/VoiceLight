@@ -2,12 +2,13 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20008 (108014), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=44100, nAvgBytesPerSec=352800, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] OutputWASAPI::init                       : Output buffer size: 3760 samples, latency: 0.00ms, period: 10.16ms, DSP buffer: 1024 * 4
+[WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002AEEF248118 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002EEDA6CA088 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,68 +18,4 @@
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002AE64A3CCD8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002AE64A3CCD8
-[LOG] SoundI::release                          : SonPourLeProto (000002AE64BC4E78)
-[LOG] SoundI::release                          :     SonPourLeProto (000002AE3932EFB8)
-[LOG] SoundI::release                          :     SonPourLeProto (000002AE64A3CCD8)
-[LOG] SoundI::release                          :  (000002AE647B9468)
-[LOG] SoundI::release                          :     projetS2_02_walk_08 (000002AE3932CF38)
-[LOG] SoundI::release                          :  (000002AE647B98B8)
-[LOG] SoundI::release                          :     projetS2_02_walk_09 (000002AE3932CD98)
-[LOG] SoundI::release                          :  (000002AE647B9D08)
-[LOG] SoundI::release                          :     projetS2_02_walk_10 (000002AE3932DDD8)
-[LOG] SoundI::release                          :  (000002AE647B9B98)
-[LOG] SoundI::release                          :     projetS2_02_walk_11 (000002AE3932F2F8)
-[LOG] SoundI::release                          :  (000002AE647B9E78)
-[LOG] SoundI::release                          :     projetS2_02_walk_12 (000002AE3932F158)
-[LOG] SoundI::release                          :  (000002AE647B9188)
-[LOG] SoundI::release                          :     projetS2_02_walk_13 (000002AE3932DA98)
-[LOG] SoundI::release                          :  (000002AE647B9748)
-[LOG] SoundI::release                          :     projetS2_02_walk_01 (000002AE3932C3D8)
-[LOG] SoundI::release                          :  (000002AE647B92F8)
-[LOG] SoundI::release                          :     projetS2_02_walk_02 (000002AE3932FB18)
-[LOG] SoundI::release                          :  (000002AE647B9A28)
-[LOG] SoundI::release                          :     projetS2_02_walk_03 (000002AE3932E798)
-[LOG] SoundI::release                          :  (000002AE64F15D28)
-[LOG] SoundI::release                          :     projetS2_02_walk_04 (000002AE3932E2B8)
-[LOG] SoundI::release                          :  (000002AE64F16738)
-[LOG] SoundI::release                          :     projetS2_02_walk_05 (000002AE3932DF78)
-[LOG] SoundI::release                          :  (000002AE64F168A8)
-[LOG] SoundI::release                          :     projetS2_02_walk_06 (000002AE3932F638)
-[LOG] SoundI::release                          :  (000002AE64F15BB8)
-[LOG] SoundI::release                          :     projetS2_02_walk_07 (000002AE3932D278)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[ERR] assert                                   : assertion: 'connectionsRemaining == 0' failed
-[LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
-[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
-[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
-[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
-[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
-[LOG] SystemI::close                           : Closed.

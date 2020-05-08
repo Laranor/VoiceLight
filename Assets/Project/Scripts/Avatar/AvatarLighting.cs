@@ -44,6 +44,7 @@ public class AvatarLighting : MonoBehaviour
 
     void Update()
     {
+        lightSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         AnalyzeSound();
         db.decibel = DbValue;
         multiplier = ((DbValue + 80)/diviseur);
