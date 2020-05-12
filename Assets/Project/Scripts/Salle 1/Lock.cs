@@ -7,11 +7,11 @@ public class Lock : MonoBehaviour
     public bool locked = true;
     public Light avatarLight;
     public Light cubeLight;
-    [SerializeField] private float intensity;
     [SerializeField] private float time = 0;
 
-    [SerializeField] private float timeTarget = 1;
-    [SerializeField] private float intensityTarget = 2;
+    public float timeTarget = 1;
+    public float intensityTarget = 1.5f;
+    public float range = 5;
 
     public Lock lock1;
     public Lock lock2;
@@ -23,7 +23,7 @@ public class Lock : MonoBehaviour
     {
         if(gameObject.name == "Cylinder1")
         {
-            Unlocking(other.gameObject);
+            //Unlocking(other.gameObject);
             if (cubeLight.intensity > intensityTarget)
                 locked = false;
             if (transform.position.x <= -1.3f && !locked)
@@ -69,14 +69,13 @@ public class Lock : MonoBehaviour
     }
     private void Unlocking (GameObject light)
     {
-        if (locked && ((light.transform.position - transform.position).magnitude <= 4))
+        if (locked && ((light.transform.position - transform.position).magnitude <= range))
         {
             if (light.name == "Light")
             {
-                intensity = avatarLight.intensity - (avatarLight.intensity * ((light.transform.position - transform.position).magnitude / avatarLight.range));
+                float intensity = avatarLight.intensity - (avatarLight.intensity * ((light.transform.position - transform.position).magnitude / avatarLight.range));
                 if (intensity > intensityTarget)
                 {
-
                     time += Time.deltaTime;
                     if (time > timeTarget)
                     {
@@ -84,8 +83,6 @@ public class Lock : MonoBehaviour
                     }
                 }
             }
-            else
-                time = 0;
         }
     }
 }
