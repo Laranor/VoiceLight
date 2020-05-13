@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000185BC16A068 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000021E9A404C38 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,36 +15,70 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9127840
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87264
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000002C8619F13C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA79C8C320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA79C8C2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA79C8C3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA79C8C4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000021E9870DEA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='land1', format=2, channels=2, frequency=48000, lengthbytes=2944, lengthpcm=13429, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.297791.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021DCC546548
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] SoundI::release                          : SonPourLeProto (00000185E4BB3B08)
-[LOG] SoundI::release                          :     SonPourLeProto (00000185A58B1D68)
-[LOG] SoundI::release                          :     SonPourLeProto (000001862AB866E8)
-[LOG] SoundI::release                          :  (0000018632C76018)
-[LOG] SoundI::release                          :     projetS2_02_walk_08 (00000185A58B1A28)
-[LOG] SoundI::release                          :  (0000018632C75EA8)
-[LOG] SoundI::release                          :     projetS2_02_walk_09 (00000185A58B20A8)
-[LOG] SoundI::release                          :  (0000018632C78128)
-[LOG] SoundI::release                          :     projetS2_02_walk_10 (00000185A58B1888)
-[LOG] SoundI::release                          :  (0000018632C78F88)
-[LOG] SoundI::release                          :     projetS2_02_walk_11 (00000185A58B3428)
-[LOG] SoundI::release                          :  (0000018632C75D38)
-[LOG] SoundI::release                          :     projetS2_02_walk_12 (00000185A58B1F08)
-[LOG] SoundI::release                          :  (0000018632C78578)
-[LOG] SoundI::release                          :     projetS2_02_walk_13 (00000185A58B2588)
-[LOG] SoundI::release                          :  (0000018632C762F8)
-[LOG] SoundI::release                          :     projetS2_02_walk_01 (00000185A58B28C8)
-[LOG] SoundI::release                          :  (0000018632C786E8)
-[LOG] SoundI::release                          :     projetS2_02_walk_02 (00000185A58B2728)
-[LOG] SoundI::release                          :  (0000018632C78298)
-[LOG] SoundI::release                          :     projetS2_02_walk_03 (00000185A58B23E8)
-[LOG] SoundI::release                          :  (0000018625987978)
-[LOG] SoundI::release                          :     projetS2_02_walk_04 (00000185A58B2F48)
-[LOG] SoundI::release                          :  (0000018632C76748)
-[LOG] SoundI::release                          :     projetS2_02_walk_05 (00000185A58B1BC8)
-[LOG] SoundI::release                          :  (0000018632C768B8)
-[LOG] SoundI::release                          :     projetS2_02_walk_06 (00000185A58B2DA8)
-[LOG] SoundI::release                          :  (00000186259870D8)
-[LOG] SoundI::release                          :     projetS2_02_walk_07 (00000185A58B2A68)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021DCC546548
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021DCC546548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021DCC546548
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : SonPourLeProto (0000021EABB710A8)
+[LOG] SoundI::release                          :     SonPourLeProto (0000021E999C37F8)
+[LOG] SoundI::release                          :     SonPourLeProto (0000021DCC546548)
+[LOG] SoundI::release                          :  (0000021EAC0A5F88)
+[LOG] SoundI::release                          :     land1 (0000021E999BA278)
+[LOG] SoundI::release                          :  (0000021EABC798A8)
+[LOG] SoundI::release                          :     projetS2_02_walk_08 (0000021E999B9238)
+[LOG] SoundI::release                          :  (0000021E308412E8)
+[LOG] SoundI::release                          :     projetS2_02_walk_09 (0000021E999C7418)
+[LOG] SoundI::release                          :  (0000021E30840318)
+[LOG] SoundI::release                          :     projetS2_02_walk_10 (0000021E999C4B78)
+[LOG] SoundI::release                          :  (0000021E308408D8)
+[LOG] SoundI::release                          :     projetS2_02_walk_11 (0000021E999C70D8)
+[LOG] SoundI::release                          :  (0000021E30841738)
+[LOG] SoundI::release                          :     projetS2_02_walk_12 (0000021E999C3998)
+[LOG] SoundI::release                          :  (0000021EAB749A58)
+[LOG] SoundI::release                          :     projetS2_02_walk_13 (0000021E999BA0D8)
+[LOG] SoundI::release                          :  (0000021EABC79B88)
+[LOG] SoundI::release                          :     projetS2_02_walk_01 (0000021E999BC638)
+[LOG] SoundI::release                          :  (0000021EAB749BC8)
+[LOG] SoundI::release                          :     projetS2_02_walk_02 (0000021E999B8878)
+[LOG] SoundI::release                          :  (0000021E30841458)
+[LOG] SoundI::release                          :     projetS2_02_walk_03 (0000021E999C56D8)
+[LOG] SoundI::release                          :  (0000021E9A0E2988)
+[LOG] SoundI::release                          :     projetS2_02_walk_04 (0000021E999BADD8)
+[LOG] SoundI::release                          :  (0000021EABC788D8)
+[LOG] SoundI::release                          :     projetS2_02_walk_05 (0000021E999BBFB8)
+[LOG] SoundI::release                          :  (0000021DCD4AEF28)
+[LOG] SoundI::release                          :     projetS2_02_walk_06 (0000021E999BC158)
+[LOG] SoundI::release                          :  (0000021DCD4AE3A8)
+[LOG] SoundI::release                          :     projetS2_02_walk_07 (0000021E999BC2F8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
