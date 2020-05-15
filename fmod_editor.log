@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002AC2C69A178 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001CF96D424E8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,37 +15,57 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] SoundI::release                          : SonPourLeProto (000002AC83CB57B8)
-[LOG] SoundI::release                          :     SonPourLeProto (000002AC2A017738)
-[LOG] SoundI::release                          :     SonPourLeProto (000002AC83CB3CB8)
-[LOG] SoundI::release                          :  (000002AC2A192778)
-[LOG] SoundI::release                          :     projetS2_02_walk_08 (000002AC2A0B2C48)
-[LOG] SoundI::release                          :  (000002AC83444B98)
-[LOG] SoundI::release                          :     projetS2_02_walk_09 (000002AC2A0180F8)
-[LOG] SoundI::release                          :  (000002AC834442F8)
-[LOG] SoundI::release                          :     projetS2_02_walk_10 (000002AC2A018298)
-[LOG] SoundI::release                          :  (000002AC83444A28)
-[LOG] SoundI::release                          :     projetS2_02_walk_11 (000002AC2A017F58)
-[LOG] SoundI::release                          :  (000002AC83444468)
-[LOG] SoundI::release                          :     projetS2_02_walk_12 (000002AC2A017DB8)
-[LOG] SoundI::release                          :  (000002AC83444FE8)
-[LOG] SoundI::release                          :     projetS2_02_walk_13 (000002AC2A0B1588)
-[LOG] SoundI::release                          :  (000002AC2A193A28)
-[LOG] SoundI::release                          :     projetS2_02_walk_01 (000002AC2A0B1DA8)
-[LOG] SoundI::release                          :  (000002AC2A192048)
-[LOG] SoundI::release                          :     projetS2_02_walk_02 (000002AC2A0B2DE8)
-[LOG] SoundI::release                          :  (000002AC83444E78)
-[LOG] SoundI::release                          :     projetS2_02_walk_03 (000002AC2A0185D8)
-[LOG] SoundI::release                          :  (000002AC8835F5A8)
-[LOG] SoundI::release                          :     projetS2_02_walk_04 (000002AC2A0B37A8)
-[LOG] SoundI::release                          :  (000002AC2A192328)
-[LOG] SoundI::release                          :     projetS2_02_walk_05 (000002AC2A0B3C88)
-[LOG] SoundI::release                          :  (000002AC2A1928E8)
-[LOG] SoundI::release                          :     projetS2_02_walk_06 (000002AC2A0B47E8)
-[LOG] SoundI::release                          :  (000002AC2A192A58)
-[LOG] SoundI::release                          :     projetS2_02_walk_07 (000002AC2A0B2908)
+[LOG] SoundI::release                          : SonPourLeProto (000001CFAD2AD5E8)
+[LOG] SoundI::release                          :     SonPourLeProto (000001CECE1FCC28)
+[LOG] SoundI::release                          :     SonPourLeProto (000001CFAD2AE008)
+[LOG] SoundI::release                          :  (000001CFAD58A648)
+[LOG] SoundI::release                          :     projetS2_02_walk_08 (000001CF3208D1B8)
+[LOG] SoundI::release                          :  (000001CFAD58BD48)
+[LOG] SoundI::release                          :     projetS2_02_walk_09 (000001CF3208CCD8)
+[LOG] SoundI::release                          :  (000001CFAD589398)
+[LOG] SoundI::release                          :     projetS2_02_walk_10 (000001CF3208CE78)
+[LOG] SoundI::release                          :  (000001CFAD58B338)
+[LOG] SoundI::release                          :     projetS2_02_walk_11 (000001CECE1FB3C8)
+[LOG] SoundI::release                          :  (000001CFAD58B788)
+[LOG] SoundI::release                          :     projetS2_02_walk_12 (000001CECE1FAEE8)
+[LOG] SoundI::release                          :  (000001CFAD58AA98)
+[LOG] SoundI::release                          :     projetS2_02_walk_13 (000001CF3208B2D8)
+[LOG] SoundI::release                          :  (000001CFAD58B8F8)
+[LOG] SoundI::release                          :     projetS2_02_walk_01 (000001CF3208D4F8)
+[LOG] SoundI::release                          :  (000001CFAD58CA38)
+[LOG] SoundI::release                          :     projetS2_02_walk_02 (000001CF3208D018)
+[LOG] SoundI::release                          :  (000001CFAD58C8C8)
+[LOG] SoundI::release                          :     projetS2_02_walk_03 (000001CF3208E878)
+[LOG] SoundI::release                          :  (000001CFAD58A088)
+[LOG] SoundI::release                          :     projetS2_02_walk_04 (000001CF3208B478)
+[LOG] SoundI::release                          :  (000001CFAD58B4A8)
+[LOG] SoundI::release                          :     projetS2_02_walk_05 (000001CF3208D838)
+[LOG] SoundI::release                          :  (000001CFAD589F18)
+[LOG] SoundI::release                          :     projetS2_02_walk_06 (000001CF3208DEB8)
+[LOG] SoundI::release                          :  (000001CFAD58AEE8)
+[LOG] SoundI::release                          :     projetS2_02_walk_07 (000001CF3208D9D8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
