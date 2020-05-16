@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001CF96D424E8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000222E3E9F058 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,57 +15,43 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CFAD2AE008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CFAD2AE008
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] SoundI::release                          : SonPourLeProto (000001CFAD2AD5E8)
-[LOG] SoundI::release                          :     SonPourLeProto (000001CECE1FCC28)
-[LOG] SoundI::release                          :     SonPourLeProto (000001CFAD2AE008)
-[LOG] SoundI::release                          :  (000001CFAD58A648)
-[LOG] SoundI::release                          :     projetS2_02_walk_08 (000001CF3208D1B8)
-[LOG] SoundI::release                          :  (000001CFAD58BD48)
-[LOG] SoundI::release                          :     projetS2_02_walk_09 (000001CF3208CCD8)
-[LOG] SoundI::release                          :  (000001CFAD589398)
-[LOG] SoundI::release                          :     projetS2_02_walk_10 (000001CF3208CE78)
-[LOG] SoundI::release                          :  (000001CFAD58B338)
-[LOG] SoundI::release                          :     projetS2_02_walk_11 (000001CECE1FB3C8)
-[LOG] SoundI::release                          :  (000001CFAD58B788)
-[LOG] SoundI::release                          :     projetS2_02_walk_12 (000001CECE1FAEE8)
-[LOG] SoundI::release                          :  (000001CFAD58AA98)
-[LOG] SoundI::release                          :     projetS2_02_walk_13 (000001CF3208B2D8)
-[LOG] SoundI::release                          :  (000001CFAD58B8F8)
-[LOG] SoundI::release                          :     projetS2_02_walk_01 (000001CF3208D4F8)
-[LOG] SoundI::release                          :  (000001CFAD58CA38)
-[LOG] SoundI::release                          :     projetS2_02_walk_02 (000001CF3208D018)
-[LOG] SoundI::release                          :  (000001CFAD58C8C8)
-[LOG] SoundI::release                          :     projetS2_02_walk_03 (000001CF3208E878)
-[LOG] SoundI::release                          :  (000001CFAD58A088)
-[LOG] SoundI::release                          :     projetS2_02_walk_04 (000001CF3208B478)
-[LOG] SoundI::release                          :  (000001CFAD58B4A8)
-[LOG] SoundI::release                          :     projetS2_02_walk_05 (000001CF3208D838)
-[LOG] SoundI::release                          :  (000001CFAD589F18)
-[LOG] SoundI::release                          :     projetS2_02_walk_06 (000001CF3208DEB8)
-[LOG] SoundI::release                          :  (000001CFAD58AEE8)
-[LOG] SoundI::release                          :     projetS2_02_walk_07 (000001CF3208D9D8)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : SonPourLeProto (00000222E533D378)
+[LOG] SoundI::release                          :     SonPourLeProto (00000223B2BE0928)
+[LOG] SoundI::release                          :     SonPourLeProto (00000222E533D528)
+[LOG] SoundI::release                          :  (00000222E4A6DEB8)
+[LOG] SoundI::release                          :     projetS2_02_walk_08 (00000222E508D188)
+[LOG] SoundI::release                          :  (00000222E4A6C368)
+[LOG] SoundI::release                          :     projetS2_02_walk_09 (00000223AC621588)
+[LOG] SoundI::release                          :  (00000222E4A6D338)
+[LOG] SoundI::release                          :     projetS2_02_walk_10 (00000223AC6244A8)
+[LOG] SoundI::release                          :  (00000223B2FB9328)
+[LOG] SoundI::release                          :     projetS2_02_walk_11 (00000223B2BE0448)
+[LOG] SoundI::release                          :  (00000223B2FB8078)
+[LOG] SoundI::release                          :     projetS2_02_walk_12 (00000223B2BDF268)
+[LOG] SoundI::release                          :  (00000222E4A6D4A8)
+[LOG] SoundI::release                          :     projetS2_02_walk_13 (00000223AC6232C8)
+[LOG] SoundI::release                          :  (00000222E4A6C7B8)
+[LOG] SoundI::release                          :     projetS2_02_walk_01 (00000222E508BAC8)
+[LOG] SoundI::release                          :  (00000222E4A6D058)
+[LOG] SoundI::release                          :     projetS2_02_walk_02 (00000223AC623C88)
+[LOG] SoundI::release                          :  (00000222E4A6CEE8)
+[LOG] SoundI::release                          :     projetS2_02_walk_03 (00000223AC622908)
+[LOG] SoundI::release                          :  (00000223AC528938)
+[LOG] SoundI::release                          :     projetS2_02_walk_04 (00000223AC6247E8)
+[LOG] SoundI::release                          :  (00000222E4A6C928)
+[LOG] SoundI::release                          :     projetS2_02_walk_05 (00000223B2BE0C68)
+[LOG] SoundI::release                          :  (00000222E4A6D788)
+[LOG] SoundI::release                          :     projetS2_02_walk_06 (00000223AC623E28)
+[LOG] SoundI::release                          :  (00000222E4A6DA68)
+[LOG] SoundI::release                          :     projetS2_02_walk_07 (00000223AC624168)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -81,12 +67,3 @@
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
-[LOG] SystemI::close                           : Closed.
