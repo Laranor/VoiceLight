@@ -8,10 +8,23 @@ public class PitchPlatform : MonoBehaviour
 
     [SerializeField] private float pitchValue;
     [SerializeField] private float dbValue;
+
+    public GameObject endCrystal;
     public float maxHeight;
     public float minHeight;
     public float seuilPitch;
     public float speed;
+    public float disableHeight;
+    private bool enable;
+
+    public void Update()
+    {
+        if (endCrystal.GetComponent<EndCrystalPilier>().enable == true)
+        {
+            transform.position = new Vector3(transform.position.x, disableHeight, transform.position.z);
+            Destroy(GetComponent<PitchPlatform>());
+        }
+    }
 
     private void OnCollisionStay(Collision other)
     {

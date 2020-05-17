@@ -36,16 +36,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (transform.position.y <= -20)
         {
-            transform.position = checkpoint.position;
+            //transform.position = checkpoint.position;
         }
-        if (!isGrounded)    
+        /*if (!isGrounded)    
         {
             if (transform.position.y < -70)
                 fallSpeed += 10 * Time.deltaTime;
             rb.AddForce(Vector3.down * fallSpeed, ForceMode.Acceleration);
             fallSpeed += 0.5f * Time.deltaTime;
             
-        }
+        }*/
         else
             fallSpeed = 1;
             
