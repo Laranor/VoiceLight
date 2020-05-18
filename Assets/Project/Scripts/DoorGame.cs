@@ -122,7 +122,7 @@ public class DoorGame : MonoBehaviour
                 crystal.transform.position += new Vector3(0, 0.5f + speed, 0) * Time.deltaTime;
             }
         }
-        if (pitchValue <= seuilPitch && dbValue > -40)
+        if (pitchValue <= seuilPitch && dbValue > -50)
         {
             if (crystal.transform.position.y > minHeight)
             {

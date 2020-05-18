@@ -21,6 +21,7 @@ public class MicInput : MonoBehaviour
             if(Microphone.devices.Length > 0)
             {
                 _selectedDevice = Microphone.devices[0].ToString();
+                //Debug.Log(_selectedDevice);
                 _audioSource.outputAudioMixerGroup = _mixerGroupMicrophone;
                 _audioSource.clip = Microphone.Start(_selectedDevice, true, 3599, AudioSettings.outputSampleRate);
             }

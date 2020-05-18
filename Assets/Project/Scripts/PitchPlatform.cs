@@ -40,7 +40,7 @@ public class PitchPlatform : MonoBehaviour
                     transform.position += new Vector3(0, 1+speed, 0) * Time.deltaTime;
                 }
             }
-            if (pitchValue <= seuilPitch && dbValue > -40)
+            if (pitchValue <= seuilPitch && dbValue > -50)
             {
                 if (transform.position.y > minHeight )
                 {
