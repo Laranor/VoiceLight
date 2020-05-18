@@ -33,14 +33,14 @@ public class PitchPlatform : MonoBehaviour
         speed = (dbValue + 80) / 40;
         if (other.gameObject.name == "Avatar")
         {
-            if(pitchValue > seuilPitch && pitchValue > 0)
+            if(pitchValue > seuilPitch)
             {
                 if (transform.position.y < maxHeight)
                 {
                     transform.position += new Vector3(0, 1+speed, 0) * Time.deltaTime;
                 }
             }
-            if (pitchValue <= seuilPitch && pitchValue > 0)
+            if (pitchValue <= seuilPitch && dbValue > -40)
             {
                 if (transform.position.y > minHeight )
                 {

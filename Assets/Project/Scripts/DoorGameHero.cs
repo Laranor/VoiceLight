@@ -69,7 +69,7 @@ public class DoorGameHero : MonoBehaviour
                     redMat.DisableKeyword("_EMISSION");
                     colorBlue = false;
 
-                    if (pitchValue > seuilPitch && pitchValue > 0)
+                    if (pitchValue > seuilPitch)
                     {
                         Debug.Log("yes");
                         Unlock();
@@ -82,7 +82,7 @@ public class DoorGameHero : MonoBehaviour
                     redMat.EnableKeyword("_EMISSION");
                     blueMat.DisableKeyword("_EMISSION");
                     colorBlue = true;
-                    if (pitchValue < seuilPitch && pitchValue > 0)
+                    if (pitchValue <= seuilPitch && dbValue > -40)
                     {
                         Debug.Log("no");
                         Unlock();

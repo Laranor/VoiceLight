@@ -115,14 +115,14 @@ public class DoorGame : MonoBehaviour
 
     private void CursorMove(GameObject crystal)
     {
-        if (pitchValue > seuilPitch && pitchValue > 0)
+        if (pitchValue > seuilPitch)
         {
             if (crystal.transform.position.y < maxHeight)
             {
                 crystal.transform.position += new Vector3(0, 0.5f + speed, 0) * Time.deltaTime;
             }
         }
-        if (pitchValue <= seuilPitch && pitchValue > 0)
+        if (pitchValue <= seuilPitch && dbValue > -40)
         {
             if (crystal.transform.position.y > minHeight)
             {
