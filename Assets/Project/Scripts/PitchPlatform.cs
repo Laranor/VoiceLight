@@ -21,19 +21,30 @@ public class PitchPlatform : MonoBehaviour
     {
         if (endCrystal.GetComponent<EndCrystalPilier>().enable == true)
         {
-            transform.position = new Vector3(transform.position.x, disableHeight, transform.position.z);
-            Destroy(GetComponent<PitchPlatform>());
+            if(transform.position.y != disableHeight)
+            {
+                if(transform.position.y > disableHeight)
+                {
+                    transform.position -= new Vector3(0, 3, 0) * Time.deltaTime;
+                }
+                if (transform.position.y < disableHeight)
+                {
+                    transform.position += new Vector3(0, 3, 0) * Time.deltaTime;
+                }
+            }
+            if (transform.position.y < disableHeight + 0.01f && transform.position.y > disableHeight - 0.01f)
+                Destroy(GetComponent<PitchPlatform>());
         }
     }
 
-    private void OnCollisionStay(Collision other)
+    private void OnTriggerStay(Collider other)
     {
-        pitchValue = avatar.PitchValue;
-        dbValue = avatar.DbValue;
-        speed = (dbValue + 80) / 40;
         if (other.gameObject.name == "Avatar")
         {
-            if(pitchValue > seuilPitch)
+            pitchValue = avatar.PitchValue;
+            dbValue = avatar.DbValue;
+            speed = (dbValue + 80) / 40;
+            if (pitchValue > seuilPitch)
             {
                 if (transform.position.y < maxHeight)
                 {

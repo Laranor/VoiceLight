@@ -64,6 +64,16 @@ public class CrystalHero : MonoBehaviour
     {
         if (other.gameObject.name == "Avatar")
         {
+            if (colorBlue)
+            {
+                blueMat.EnableKeyword("_EMISSION");
+                redMat.DisableKeyword("_EMISSION");
+            }
+            else
+            {
+                redMat.EnableKeyword("_EMISSION");
+                blueMat.DisableKeyword("_EMISSION");
+            }
             pitchValue = avatar.PitchValue;
             dbValue = avatar.DbValue;
             timer += Time.deltaTime;
@@ -71,9 +81,6 @@ public class CrystalHero : MonoBehaviour
             {
                 if (colorBlue)
                 {
-                    blueMat.EnableKeyword("_EMISSION");
-                    redMat.DisableKeyword("_EMISSION");
-                    NextLock();
                     if (pitchValue > seuilPitch)
                     {
                         Debug.Log("yes");
@@ -84,9 +91,6 @@ public class CrystalHero : MonoBehaviour
                 }
                 else
                 {
-                    redMat.EnableKeyword("_EMISSION");
-                    blueMat.DisableKeyword("_EMISSION");
-                    NextLock();
                     if (pitchValue <= seuilPitch && dbValue > -50)
                     {
                         Debug.Log("no");
@@ -138,6 +142,7 @@ public class CrystalHero : MonoBehaviour
             mat7.EnableKeyword("_EMISSION");
         }
         lockNum += 1;
+        SetLock();
     }
 
     private void ResetLock()
@@ -152,7 +157,7 @@ public class CrystalHero : MonoBehaviour
         lockNum = 1;
     }
 
-    private void NextLock()
+    private void SetLock()
     {
         if (lockNum == 1)
         {

@@ -7,13 +7,55 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000026476BB70B8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000011930616248 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : SonPourLeProto (0000011951353CB8)
+[LOG] SoundI::release                          :     SonPourLeProto (0000011929CFE608)
+[LOG] SoundI::release                          :     SonPourLeProto (0000011951352BD8)
+[LOG] SoundI::release                          :  (0000011997EE1518)
+[LOG] SoundI::release                          :     projetS2_02_walk_08 (0000011929CFD908)
+[LOG] SoundI::release                          :  (0000011997EE03D8)
+[LOG] SoundI::release                          :     projetS2_02_walk_09 (0000011929CFD428)
+[LOG] SoundI::release                          :  (0000011997EE0268)
+[LOG] SoundI::release                          :     projetS2_02_walk_10 (0000011929CFD768)
+[LOG] SoundI::release                          :  (0000011997EE0548)
+[LOG] SoundI::release                          :     projetS2_02_walk_11 (0000011929CFE7A8)
+[LOG] SoundI::release                          :  (0000011997EE00F8)
+[LOG] SoundI::release                          :     projetS2_02_walk_12 (0000011929CFC728)
+[LOG] SoundI::release                          :  (0000011997EE0DE8)
+[LOG] SoundI::release                          :     projetS2_02_walk_13 (0000011929CFEAE8)
+[LOG] SoundI::release                          :  (0000011997EE1238)
+[LOG] SoundI::release                          :     projetS2_02_walk_01 (0000011929CFE468)
+[LOG] SoundI::release                          :  (0000011997EE2208)
+[LOG] SoundI::release                          :     projetS2_02_walk_02 (0000011929CFC8C8)
+[LOG] SoundI::release                          :  (0000011997EE1AD8)
+[LOG] SoundI::release                          :     projetS2_02_walk_03 (0000011929CFD5C8)
+[LOG] SoundI::release                          :  (0000011997EE2378)
+[LOG] SoundI::release                          :     projetS2_02_walk_04 (0000011929CFDF88)
+[LOG] SoundI::release                          :  (0000011997EE0B08)
+[LOG] SoundI::release                          :     projetS2_02_walk_05 (0000011929CFDAA8)
+[LOG] SoundI::release                          :  (0000011997EE0C78)
+[LOG] SoundI::release                          :     projetS2_02_walk_06 (0000011929CFDC48)
+[LOG] SoundI::release                          :  (0000011997EE2938)
+[LOG] SoundI::release                          :     projetS2_02_walk_07 (0000011929CFDDE8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[ERR] assert                                   : assertion: 'connectionsRemaining == 0' failed
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
@@ -24,4 +66,6 @@
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.

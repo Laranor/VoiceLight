@@ -58,6 +58,16 @@ public class DoorGameHero : MonoBehaviour
     {
         if(other.gameObject.name == "Avatar")
         {
+            if(colorBlue)
+            {
+                blueMat.EnableKeyword("_EMISSION");
+                redMat.DisableKeyword("_EMISSION");
+            }
+            else
+            {
+                redMat.EnableKeyword("_EMISSION");
+                blueMat.DisableKeyword("_EMISSION");
+            }
             pitchValue = avatar.PitchValue;
             dbValue = avatar.DbValue;
             timer += Time.deltaTime;
@@ -65,10 +75,6 @@ public class DoorGameHero : MonoBehaviour
             {
                 if(colorBlue)
                 {
-                    blueMat.EnableKeyword("_EMISSION");
-                    redMat.DisableKeyword("_EMISSION");
-                    colorBlue = false;
-
                     if (pitchValue > seuilPitch)
                     {
                         Debug.Log("yes");
@@ -76,12 +82,10 @@ public class DoorGameHero : MonoBehaviour
                     }
                     else
                         ResetLock();
+                    colorBlue = false;
                 }
                 else
                 {
-                    redMat.EnableKeyword("_EMISSION");
-                    blueMat.DisableKeyword("_EMISSION");
-                    colorBlue = true;
                     if (pitchValue <= seuilPitch && dbValue > -50)
                     {
                         Debug.Log("no");
@@ -89,6 +93,7 @@ public class DoorGameHero : MonoBehaviour
                     }
                     else
                         ResetLock();
+                    colorBlue = true;
                 }
                 timer = 0;
             }
