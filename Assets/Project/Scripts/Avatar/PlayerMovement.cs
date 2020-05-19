@@ -34,21 +34,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y <= -20)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //transform.position = checkpoint.position;
+            Application.Quit();
         }
-        /*if (!isGrounded)    
-        {
-            if (transform.position.y < -70)
-                fallSpeed += 10 * Time.deltaTime;
-            rb.AddForce(Vector3.down * fallSpeed, ForceMode.Acceleration);
-            fallSpeed += 0.5f * Time.deltaTime;
-            
-        }*/
-        else
-            fallSpeed = 1;
-            
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, dontReloadMask);
         
         inputs = Vector3.zero;
@@ -79,23 +69,6 @@ public class PlayerMovement : MonoBehaviour
             speed = 5f;
             walkSound.setParameterByName("Parameter 3", 0);
         }
-        /*
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb.AddForce(Vector3.up * Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
-            FMODUnity.RuntimeManager.PlayOneShot("event:/01_A_IMPLEMENTER/Jump_01", gameObject.transform.position);
-        }
-
-        if (isBeingLaunched)
-        {
-            launchTimer += Time.deltaTime;
-            
-            if (launchTimer >= launchTime)
-            {
-                isBeingLaunched = false;
-                launchTimer = 0;
-            }
-        }*/
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -111,23 +84,6 @@ public class PlayerMovement : MonoBehaviour
         inputs = transform.TransformDirection(inputs);
         
         rb.MovePosition(rb.position + inputs * speed * Time.fixedDeltaTime);
-        /*
-        //Air Movement
-        if (Input.GetButton("Vertical") && !isGrounded && !isBeingLaunched)
-        {
-            Vector2 velocity2 = new Vector2(rb.velocity.x, rb.velocity.z);
-            Vector2 facing2 = new Vector2(transform.forward.x, transform.forward.z);
-            facing2.Normalize();
-
-            Vector2 newVelocity2 = facing2 * velocity2.magnitude;
-            
-            Vector3 newVelocity = new Vector3(newVelocity2.x, 0, newVelocity2.y);
-            newVelocity = Vector3.Lerp(rb.velocity, newVelocity, 0.1f);
-            
-            newVelocity.y = rb.velocity.y;
-            
-            rb.velocity = newVelocity;
-        }*/
     }
 
     public void Death()
