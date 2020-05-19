@@ -129,5 +129,10 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = newVelocity;
         }*/
     }
+
+    public void Death()
+    {
+        transform.position = checkpoint.position;
+    }
 }
 

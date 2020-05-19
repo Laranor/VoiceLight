@@ -7,6 +7,8 @@ public class Monster : MonoBehaviour
 {
     public Transform target;
     public Transform monsterTarget;
+    public List<Transform> targets;
+    int i = 0;
     Vector3 destination;
     NavMeshAgent agent;
     float soundDetection;
@@ -17,6 +19,7 @@ public class Monster : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         detection = GetComponent<SoundDetection>();
         destination = agent.destination;
+        monsterTarget = targets[0];
     }
 
     void Update()
@@ -39,6 +42,25 @@ public class Monster : MonoBehaviour
         {
             destination = target.position;
             agent.destination = destination;
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.transform == targets[i] && ((other.transform.position - transform.position).magnitude) <= 3)
+        {
+            i += 1;
+            if (i == targets.Count)
+                i = 0;
+
+            monsterTarget = targets[i];
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "Avatar")
+        {
+            collision.gameObject.GetComponent<PlayerMovement>().Death();
+            Debug.Log("yes");
         }
     }
 }
