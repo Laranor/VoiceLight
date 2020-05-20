@@ -231,7 +231,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -708,12 +710,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -4536207695053388408}
+  - {fileID: 8642596519735059737}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -813,6 +817,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Dure_eclairage 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
+--- !u!114 &-8278353207809667822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SonPourLeProto/Intensity
   m_EditorClassIdentifier: 
   Name: Intensity
   Min: 0
@@ -1092,6 +1113,24 @@ MonoBehaviour:
   Max: 3
   Default: 0
   Exists: 0
+--- !u!114 &-7724021536073564831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SD_Projet/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637197968060079207
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7691984579621681568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,7 +1157,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1239,7 +1280,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1435,6 +1478,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &-7343484557626037554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cube_01/Cubes
+  m_EditorClassIdentifier: 
+  Name: Cubes
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 1
 --- !u!114 &-7342181194905047559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,12 +1630,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -1901766631307188916}
+  - {fileID: -6948440897970976348}
   MinDistance: 1
   MaxDistance: 20
   Length: 10502
@@ -1622,7 +1684,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1852,6 +1916,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &-6948440897970976348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dure_eclairage/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
 --- !u!114 &-6946337347871443220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,12 +2233,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3036207563774833983}
+  - {fileID: -384925505987099575}
   MinDistance: 1
   MaxDistance: 20
   Length: 10502
@@ -2223,6 +2306,40 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Reverberation 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
+--- !u!114 &-6232333973393831219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Light_Intensity_Feedback 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
+--- !u!114 &-6133697299154613964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverberation/Intensity
   m_EditorClassIdentifier: 
   Name: Intensity
   Min: 0
@@ -2430,6 +2547,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Temps_noir 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
+--- !u!114 &-5861853490725817567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SonPourLeProto/Intensity
   m_EditorClassIdentifier: 
   Name: Intensity
   Min: 0
@@ -2685,12 +2819,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 5984246524096831348}
+  - {fileID: 6513441399467729212}
   MinDistance: 1
   MaxDistance: 20
   Length: 10502
@@ -2755,15 +2891,34 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 9090276264893528594}
+  - {fileID: -8278353207809667822}
   MinDistance: 1
   MaxDistance: 20
   Length: 256853
+--- !u!114 &-5508618296940290616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverberation 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
 --- !u!114 &-5472067528720728110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2934,6 +3089,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &-5252866396027626424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Light_Intensity_Feedback/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &-5252060219197925288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2968,6 +3140,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 1
+--- !u!114 &-5235949156875838671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dure_eclairage/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &-5220113072155576519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3131,7 +3320,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3139,6 +3330,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 48139
+--- !u!114 &-5101711212043386266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Light_Intensity_Feedback/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
+--- !u!114 &-5089963940631784104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land_01/Jump
+  m_EditorClassIdentifier: 
+  Name: Jump
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-5086082160839418457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3207,6 +3432,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &-5021567084863262932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dure_eclairage 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
 --- !u!114 &-5018066335415824479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3360,6 +3602,23 @@ MonoBehaviour:
   Max: 3
   Default: 0
   Exists: 1
+--- !u!114 &-4807001875860560743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walk_01/Parameter 3
+  m_EditorClassIdentifier: 
+  Name: Parameter 3
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &-4743055612630024437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3809,6 +4068,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4103230800621385990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SD_Projet/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637197968060079207
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-4101937545472918961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4023,7 +4300,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4057,7 +4336,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4117,6 +4398,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-3647458331069663513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land_01/Jump
+  m_EditorClassIdentifier: 
+  Name: Jump
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-3638571017133127465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4264,6 +4562,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/SonPourLeProto/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
+--- !u!114 &-3292662408759326713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverberation 2/Intensity
   m_EditorClassIdentifier: 
   Name: Intensity
   Min: 0
@@ -4688,7 +5003,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4730,6 +5047,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 1
+--- !u!114 &-2418027409882608790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cube_01/Cubes
+  m_EditorClassIdentifier: 
+  Name: Cubes
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 0
 --- !u!114 &-2404237859949667513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4798,6 +5132,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &-2217367761299297462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dure_eclairage 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &-2212432392123252160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4824,7 +5175,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4875,7 +5228,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -4883,6 +5238,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 27120
+--- !u!114 &-1990503736596500116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump_01/Jump
+  m_EditorClassIdentifier: 
+  Name: Jump
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-1965590797540859174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4915,6 +5287,23 @@ MonoBehaviour:
   Name: Parameter 3
   Min: 0
   Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-1930644462091615795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dure_eclairage/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
   Default: 0
   Exists: 0
 --- !u!114 &-1925304715443938597
@@ -4997,6 +5386,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Light_Intensity_Feedback 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
+--- !u!114 &-1751250885811739369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverberation/Intensity
   m_EditorClassIdentifier: 
   Name: Intensity
   Min: 0
@@ -5098,12 +5504,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -3561150425033946796}
+  - {fileID: -6133697299154613964}
   MinDistance: 1
   MaxDistance: 20
   Length: 10502
@@ -5766,7 +6174,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5800,12 +6210,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8618014086538488008}
+  - {fileID: -7343484557626037554}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -5835,7 +6247,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5843,6 +6257,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 325
+--- !u!114 &-384925505987099575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Temps_noir/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
 --- !u!114 &-350226424594632780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5903,12 +6334,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -8303582907864715100}
+  - {fileID: -5021567084863262932}
   MinDistance: 1
   MaxDistance: 20
   Length: 10502
@@ -6067,6 +6500,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &-145052560235227859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Temps_noir 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &-137543923679405250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6152,6 +6602,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &-38826525305900736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Temps_noir/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6166,7 +6633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 3618170735380773058}
-  - {fileID: -7603921996067487466}
+  - {fileID: 2888455279686060320}
   EditorEvents:
   - {fileID: -5508976466473424550}
   - {fileID: 2668336645228226890}
@@ -6205,10 +6672,10 @@ MonoBehaviour:
   - {fileID: 7396066919624583233}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -7603921996067487466}
+  - {fileID: 2888455279686060320}
   StringsBanks:
   - {fileID: 3618170735380773058}
-  stringsBankWriteTime: 637201591516832116
+  stringsBankWriteTime: 637197968060973492
   cacheVersion: 3
 --- !u!114 &19052381146046454
 MonoBehaviour:
@@ -6475,12 +6942,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -228144067297413209}
+  - {fileID: -5101711212043386266}
   MinDistance: 1
   MaxDistance: 20
   Length: 10502
@@ -6782,7 +7251,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -7123,7 +7594,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -7310,7 +7783,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7318,6 +7793,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &1563203481427865417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Temps_noir 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &1574734472866102415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7997,7 +8489,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -8056,6 +8550,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &2730280712162206942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Temps_noir 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
 --- !u!114 &2730550068020716543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8107,6 +8618,24 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 1
+--- !u!114 &2888455279686060320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SD_Projet/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637197968060079207
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2950002808310429596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8124,6 +8653,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 1
+--- !u!114 &2984408529947500755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverberation/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &2993019855591028704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8202,7 +8748,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -8476,7 +9024,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -8532,7 +9082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SD_Projet/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637201591516832116
+  lastModified: 637197968060973492
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -8741,6 +9291,23 @@ MonoBehaviour:
   Name: Cubes
   Min: 0
   Max: 9
+  Default: 0
+  Exists: 0
+--- !u!114 &3923905226733553502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dure_eclairage 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
   Default: 0
   Exists: 0
 --- !u!114 &3951643812212421712
@@ -9441,6 +10008,23 @@ MonoBehaviour:
   Max: 3
   Default: 0
   Exists: 0
+--- !u!114 &5125016362654507289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverberation 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &5132402726372380164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9526,6 +10110,23 @@ MonoBehaviour:
   Max: 9
   Default: 0
   Exists: 0
+--- !u!114 &5246589857360064756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Temps_noir/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &5248427442411530670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9586,12 +10187,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 7605850970478679849}
+  - {fileID: 8139493419460381043}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -9997,7 +10600,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -10039,6 +10644,23 @@ MonoBehaviour:
   lastModified: 637197733894392611
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &5964849056609802011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump_01/Jump
+  m_EditorClassIdentifier: 
+  Name: Jump
+  Min: 0
+  Max: 2
+  Default: 0
   Exists: 0
 --- !u!114 &5966935609230149227
 MonoBehaviour:
@@ -10186,12 +10808,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7055594574097937442}
+  - {fileID: -5508618296940290616}
   MinDistance: 1
   MaxDistance: 20
   Length: 10502
@@ -10348,6 +10972,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &6513441399467729212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Light_Intensity_Feedback 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 1
 --- !u!114 &6516515409952590307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10416,6 +11057,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 0
+--- !u!114 &6692084130013411950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land_01/Jump
+  m_EditorClassIdentifier: 
+  Name: Jump
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &6696020081413278539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10476,7 +11134,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -10672,6 +11332,23 @@ MonoBehaviour:
   Max: 3.75
   Default: 0
   Exists: 1
+--- !u!114 &7093985695985881433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Light_Intensity_Feedback/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
+  Exists: 0
 --- !u!114 &7123268077483066628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10818,12 +11495,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -9108403771119989773}
+  - {fileID: -5089963940631784104}
   MinDistance: 1
   MaxDistance: 20
   Length: 244
@@ -10928,6 +11607,23 @@ MonoBehaviour:
   Name: Cubes
   Min: 0
   Max: 9
+  Default: 0
+  Exists: 0
+--- !u!114 &7595985124781737931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SonPourLeProto/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
   Default: 0
   Exists: 0
 --- !u!114 &7605850970478679849
@@ -11144,7 +11840,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -11264,12 +11962,14 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -5958238483034836421}
+  - {fileID: 2730280712162206942}
   MinDistance: 1
   MaxDistance: 20
   Length: 10502
@@ -11393,6 +12093,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8139493419460381043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walk_01/Parameter 3
+  m_EditorClassIdentifier: 
+  Name: Parameter 3
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
 --- !u!114 &8145488040220496179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11876,6 +12593,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &8642596519735059737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump_01/Jump
+  m_EditorClassIdentifier: 
+  Name: Jump
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &8672395618389648153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11927,6 +12661,40 @@ MonoBehaviour:
   lastModified: 637196883365284623
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &8718127668652703364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walk_01/Parameter 3
+  m_EditorClassIdentifier: 
+  Name: Parameter 3
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &8733301893666680981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Light_Intensity_Feedback 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3.75
+  Default: 0
   Exists: 0
 --- !u!114 &8790824254978790278
 MonoBehaviour:
@@ -12176,7 +12944,9 @@ MonoBehaviour:
   - {fileID: 6052939483198742768}
   - {fileID: 7030263807604831181}
   - {fileID: -7881413605184254998}
-  - {fileID: -7603921996067487466}
+  - {fileID: -7724021536073564831}
+  - {fileID: -4103230800621385990}
+  - {fileID: 2888455279686060320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -12184,6 +12954,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 452
+--- !u!114 &9220584720958211724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cube_01/Cubes
+  m_EditorClassIdentifier: 
+  Name: Cubes
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 0
 --- !u!114 &9221113340090029446
 MonoBehaviour:
   m_ObjectHideFlags: 0
