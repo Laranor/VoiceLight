@@ -96,8 +96,4 @@ public class LightScript : MonoBehaviour
         PitchValue = freqN * (_fSample / 2) / QSamples; // convert index to frequency
     }
 
-    public void OnClick()
-    {
-        SceneManager.LoadScene("Main");
-    }
 }

@@ -85,10 +85,5 @@ public class PlayerMovement : MonoBehaviour
         
         rb.MovePosition(rb.position + inputs * speed * Time.fixedDeltaTime);
     }
-
-    public void Death()
-    {
-        transform.position = checkpoint.position;
-    }
 }
 

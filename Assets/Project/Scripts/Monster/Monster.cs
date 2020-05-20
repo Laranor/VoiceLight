@@ -59,8 +59,7 @@ public class Monster : MonoBehaviour
     {
         if(collision.gameObject.name == "Avatar")
         {
-            collision.gameObject.GetComponent<PlayerMovement>().Death();
-            Debug.Log("yes");
+            collision.gameObject.GetComponent<Death>().DeathReset();
         }
     }
 }
