@@ -19,7 +19,7 @@ public class PitchPlatform : MonoBehaviour
 
     public void Update()
     {
-        if (endCrystal.GetComponent<EndCrystalPilier>().enable == true)
+        if (endCrystal.GetComponent<EndCrystal>().enable == true)
         {
             if(transform.position.y != disableHeight)
             {

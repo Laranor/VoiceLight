@@ -57,14 +57,6 @@ public class Death : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.name == "Checkpoint")
-        {
-            checkpoint = other.gameObject.transform;
-        }
-    }
-
     public void DeathReset()
     {
         move.enabled = false;

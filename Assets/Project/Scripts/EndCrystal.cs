@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndCrystalPilier : MonoBehaviour
+public class EndCrystal : MonoBehaviour
 {
     public bool enable;
     public GameObject avatar;
