@@ -77,7 +77,6 @@ public class DoorGameHero : MonoBehaviour
                 {
                     if (pitchValue > seuilPitch)
                     {
-                        Debug.Log("yes");
                         Unlock();
                     }
                     else
@@ -88,7 +87,6 @@ public class DoorGameHero : MonoBehaviour
                 {
                     if (pitchValue <= seuilPitch && dbValue > -50)
                     {
-                        Debug.Log("no");
                         Unlock();
                     }
                     else
