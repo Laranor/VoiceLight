@@ -23,10 +23,7 @@ public class EndCrystal : MonoBehaviour
                 enable = true;
             }
         }
-        if ((avatar.transform.position - transform.position).magnitude >= distance)
-        {
-            text.SetActive(false);
-        }
+
 
         if (enable)
         {
@@ -37,6 +34,10 @@ public class EndCrystal : MonoBehaviour
             text.transform.LookAt(Camera.main.transform);
             textScale.transform.localScale = scale * ((avatar.transform.position - transform.position).magnitude) / 2f;
             //textScale.transform.localScale
+            if ((avatar.transform.position - transform.position).magnitude >= distance)
+            {
+                text.SetActive(false);
+            }
         }
     }
 }
