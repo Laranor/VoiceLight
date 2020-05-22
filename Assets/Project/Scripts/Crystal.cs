@@ -11,6 +11,7 @@ public class Crystal : MonoBehaviour
 
     GameObject avatarHand;
     public bool holding = false;
+
     void Start()
     {
         selfLight = GetComponent<Light>();
