@@ -28,8 +28,9 @@ public class AvatarLighting : MonoBehaviour
     [SerializeField] private float diviseur = 4f;
 
     FMOD.Studio.EventInstance lightSound;
-    private float soundIntensity;
+    [SerializeField] private float soundIntensity;
 
+    public Renderer handCrystal;
     void Start()
     {
         _samples = new float[QSamples];
@@ -49,6 +50,8 @@ public class AvatarLighting : MonoBehaviour
         db.decibel = DbValue;
         multiplier = ((DbValue + 80)/diviseur);
         avatarLight.range = avatarLight.intensity * 5;
+        Color finalValue = avatarLight.color * avatarLight.intensity/2;
+        handCrystal.material.SetColor("_EmissionColor", finalValue);
         // Lumière en temps réel
         /*if (DbValue > seuilSound && avatarLight.intensity < maxIntensity)
         {

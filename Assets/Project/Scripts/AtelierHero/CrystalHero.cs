@@ -11,25 +11,16 @@ public class CrystalHero : MonoBehaviour
 
     public float seuilPitch;
 
-    public GameObject blueCrystal;
-    private Material blueMat;
-    public GameObject redCrystal;
-    private Material redMat;
+    public Renderer[] blueCrystals;
+    public Renderer[] redCrystals;
 
-    public GameObject crystal1;
-    private Material mat1;
-    public GameObject crystal2;
-    private Material mat2;
-    public GameObject crystal3;
-    private Material mat3;
-    public GameObject crystal4;
-    private Material mat4;
-    public GameObject crystal5;
-    private Material mat5;
-    public GameObject crystal6;
-    private Material mat6;
-    public GameObject crystal7;
-    private Material mat7;
+    public Renderer[] crystals1;
+    public Renderer[] crystals2;
+    public Renderer[] crystals3;
+    public Renderer[] crystals4;
+    public Renderer[] crystals5;
+    public Renderer[] crystals6;
+    public Renderer[] crystals7;
 
     [SerializeField] private int lockNum = 1;
     public bool open = false;
@@ -39,17 +30,10 @@ public class CrystalHero : MonoBehaviour
     public float timerReset;
 
     private bool colorBlue = true;
+    public EndCrystal end; 
     void Start()
     {
-        blueMat = blueCrystal.GetComponentInChildren<Renderer>().material;
-        redMat = redCrystal.GetComponentInChildren<Renderer>().material;
-        mat1 = crystal1.GetComponentInChildren<Renderer>().material;
-        mat2 = crystal2.GetComponentInChildren<Renderer>().material;
-        mat3 = crystal3.GetComponentInChildren<Renderer>().material;
-        mat4 = crystal4.GetComponentInChildren<Renderer>().material;
-        mat5 = crystal5.GetComponentInChildren<Renderer>().material;
-        mat6 = crystal6.GetComponentInChildren<Renderer>().material;
-        mat7 = crystal7.GetComponentInChildren<Renderer>().material;
+
     }
 
     private void Update()
@@ -57,22 +41,34 @@ public class CrystalHero : MonoBehaviour
         if (lockNum >= 8)
             open = true;
         if (open)
-            door.transform.position += new Vector3(0, -0.05f, 0);
+            end.baseOn = true;
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "Avatar")
+        if (other.gameObject.name == "Avatar" && !open)
         {
             if (colorBlue)
             {
-                blueMat.EnableKeyword("_EMISSION");
-                redMat.DisableKeyword("_EMISSION");
+                for (int i = 0; i < blueCrystals.Length; i++)
+                {
+                    blueCrystals[i].material.EnableKeyword("_EMISSION");
+                }
+                for (int i = 0; i < redCrystals.Length; i++)
+                {
+                    redCrystals[i].material.DisableKeyword("_EMISSION");
+                }
             }
             else
             {
-                redMat.EnableKeyword("_EMISSION");
-                blueMat.DisableKeyword("_EMISSION");
+                for (int i = 0; i < blueCrystals.Length; i++)
+                {
+                    blueCrystals[i].material.DisableKeyword("_EMISSION");
+                }
+                for (int i = 0; i < redCrystals.Length; i++)
+                {
+                    redCrystals[i].material.EnableKeyword("_EMISSION");
+                }
             }
             pitchValue = avatar.PitchValue;
             dbValue = avatar.DbValue;
@@ -83,7 +79,6 @@ public class CrystalHero : MonoBehaviour
                 {
                     if (pitchValue > seuilPitch)
                     {
-                        Debug.Log("yes");
                         Unlock();
                     }
                     else
@@ -93,7 +88,6 @@ public class CrystalHero : MonoBehaviour
                 {
                     if (pitchValue <= seuilPitch && dbValue > -50)
                     {
-                        Debug.Log("no");
                         Unlock();
                     }
                     else
@@ -105,41 +99,71 @@ public class CrystalHero : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        redMat.DisableKeyword("_EMISSION");
-        blueMat.DisableKeyword("_EMISSION");
-        ResetLock();
-        timer = 0;
+        if(!open)
+        {
+            for (int i = 0; i < blueCrystals.Length; i++)
+            {
+                blueCrystals[i].material.DisableKeyword("_EMISSION");
+            }
+            for (int i = 0; i < redCrystals.Length; i++)
+            {
+                redCrystals[i].material.DisableKeyword("_EMISSION");
+            }
+            ResetLock();
+            timer = 0;
+        }
     }
 
     private void Unlock()
     {
         if (lockNum == 1)
         {
-            mat1.EnableKeyword("_EMISSION");
+            for (int i = 0; i < crystals1.Length; i++)
+            {
+                crystals1[i].material.EnableKeyword("_EMISSION");
+            }
         }
         if (lockNum == 2)
         {
-            mat2.EnableKeyword("_EMISSION");
+            for (int i = 0; i < crystals2.Length; i++)
+            {
+                crystals2[i].material.EnableKeyword("_EMISSION");
+            }
         }
         if (lockNum == 3)
         {
-            mat3.EnableKeyword("_EMISSION");
+            for (int i = 0; i < crystals3.Length; i++)
+            {
+                crystals3[i].material.EnableKeyword("_EMISSION");
+            }
         }
         if (lockNum == 4)
         {
-            mat4.EnableKeyword("_EMISSION");
+            for (int i = 0; i < crystals4.Length; i++)
+            {
+                crystals4[i].material.EnableKeyword("_EMISSION");
+            }
         }
         if (lockNum == 5)
         {
-            mat5.EnableKeyword("_EMISSION");
+            for (int i = 0; i < crystals5.Length; i++)
+            {
+                crystals5[i].material.EnableKeyword("_EMISSION");
+            }
         }
         if (lockNum == 6)
         {
-            mat6.EnableKeyword("_EMISSION");
+            for (int i = 0; i < crystals6.Length; i++)
+            {
+                crystals6[i].material.EnableKeyword("_EMISSION");
+            }
         }
         if (lockNum == 7)
         {
-            mat7.EnableKeyword("_EMISSION");
+            for (int i = 0; i < crystals7.Length; i++)
+            {
+                crystals7[i].material.EnableKeyword("_EMISSION");
+            }
         }
         lockNum += 1;
         SetLock();
@@ -147,14 +171,37 @@ public class CrystalHero : MonoBehaviour
 
     private void ResetLock()
     {
-        mat1.DisableKeyword("_EMISSION");
-        mat2.DisableKeyword("_EMISSION");
-        mat3.DisableKeyword("_EMISSION");
-        mat4.DisableKeyword("_EMISSION");
-        mat5.DisableKeyword("_EMISSION");
-        mat6.DisableKeyword("_EMISSION");
-        mat7.DisableKeyword("_EMISSION");
+        for (int i = 0; i < crystals1.Length; i++)
+        {
+            crystals1[i].material.DisableKeyword("_EMISSION");
+        }
+        for (int i = 0; i < crystals2.Length; i++)
+        {
+            crystals2[i].material.DisableKeyword("_EMISSION");
+        }
+        for (int i = 0; i < crystals3.Length; i++)
+        {
+            crystals3[i].material.DisableKeyword("_EMISSION");
+        }
+        for (int i = 0; i < crystals4.Length; i++)
+        {
+            crystals4[i].material.DisableKeyword("_EMISSION");
+        }
+        for (int i = 0; i < crystals5.Length; i++)
+        {
+            crystals5[i].material.DisableKeyword("_EMISSION");
+        }
+        for (int i = 0; i < crystals6.Length; i++)
+        {
+            crystals6[i].material.DisableKeyword("_EMISSION");
+        }
+        for (int i = 0; i < crystals7.Length; i++)
+        {
+            crystals7[i].material.DisableKeyword("_EMISSION");
+        }
+
         lockNum = 1;
+        colorBlue = true;
     }
 
     private void SetLock()

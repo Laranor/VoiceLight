@@ -20,6 +20,7 @@ public class Waypoints : MonoBehaviour
     public bool open;
 
     public float distanceToActivate;
+
     void Update()
     {
         if ((avatar.transform.position - transform.position).magnitude < distanceToActivate)

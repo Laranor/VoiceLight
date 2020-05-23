@@ -37,6 +37,15 @@ public class DoorGame : MonoBehaviour
 
     public GameObject door;
 
+    public Renderer crystale1;
+    public Renderer crystale2;
+    public Renderer crystale3;
+    public Renderer crystale4;
+
+    public Animator anim1;
+    public Animator anim2;
+    public Animator anim3;
+    public Animator anim4;
     void Update()
     {
         if(lockNum == 1)
@@ -47,6 +56,10 @@ public class DoorGame : MonoBehaviour
             }
             else
                 timer = 0;
+            crystale1.material.EnableKeyword("_EMISSION");
+            crystale2.material.DisableKeyword("_EMISSION");
+            crystale3.material.DisableKeyword("_EMISSION");
+            crystale4.material.DisableKeyword("_EMISSION");
         }
         if (lockNum == 2)
         {
@@ -56,6 +69,7 @@ public class DoorGame : MonoBehaviour
             }
             else
                 timer = 0;
+            crystale2.material.EnableKeyword("_EMISSION");
         }
         if (lockNum == 3)
         {
@@ -65,6 +79,7 @@ public class DoorGame : MonoBehaviour
             }
             else
                 timer = 0;
+            crystale3.material.EnableKeyword("_EMISSION");
         }
         if (lockNum == 4)
         {
@@ -74,9 +89,26 @@ public class DoorGame : MonoBehaviour
             }
             else
                 timer = 0;
+            crystale4.material.EnableKeyword("_EMISSION");
         }
         if (timer >= timeTarget)
         {
+            if(lockNum == 1)
+            {
+                anim1.SetBool("Lock", true);
+            }
+            if (lockNum == 2)
+            {
+                anim2.SetBool("Lock", true);
+            }
+            if (lockNum == 3)
+            {
+                anim3.SetBool("Lock", true);
+            }
+            if (lockNum == 4)
+            {
+                anim4.SetBool("Lock", true);
+            }
             lockNum += 1;
             timer = 0;
         }

@@ -13,9 +13,20 @@ public class EndCrystal : MonoBehaviour
 
     public GameObject textScale;
     public Vector3 scale;
+
+    bool yes;
+    public bool baseOn;
+    public Animator crystalUp;
+
     void Update()
     {
-        if ((avatar.transform.position - transform.position).magnitude < distance && !enable)
+        if ((avatar.transform.position - transform.position).magnitude < 7 && !yes && baseOn)
+        {
+            crystalUp.SetBool("Up", true);
+            yes = true;
+        }
+        //Debug.Log((avatar.transform.position - transform.position).magnitude);
+        if ((avatar.transform.position - transform.position).magnitude < distance && !enable && baseOn)
         {
             text.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))

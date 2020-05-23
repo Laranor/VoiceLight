@@ -6,7 +6,6 @@ public class EndDoor : MonoBehaviour
 {
     public EndCrystal hero;
     public EndCrystal pitch;
-    public EndCrystal golf;
 
     private bool open;
 
@@ -19,7 +18,7 @@ public class EndDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hero.enable && pitch.enable && golf.enable)
+        if(hero.enable && pitch.enable)
         {
             open = true;
         }
