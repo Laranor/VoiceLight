@@ -37155,6 +37155,11 @@ PrefabInstance:
       propertyPath: m_WarningMessage
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: -5193683105128620995, guid: ba61e53e5704d6a4281150e1c0e215ac,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f9d80e5c92ef226499aa1760d3e6d847, type: 2}
     - target: {fileID: -4216859302048453862, guid: ba61e53e5704d6a4281150e1c0e215ac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37225,11 +37230,31 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.095566444
       objectReference: {fileID: 0}
+    - target: {fileID: -2328711253997081441, guid: ba61e53e5704d6a4281150e1c0e215ac,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f9d80e5c92ef226499aa1760d3e6d847, type: 2}
     - target: {fileID: -927199367670048503, guid: ba61e53e5704d6a4281150e1c0e215ac,
         type: 3}
       propertyPath: m_Name
       value: Monstre_PAUSE-T
       objectReference: {fileID: 0}
+    - target: {fileID: 6018858971719304981, guid: ba61e53e5704d6a4281150e1c0e215ac,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f9d80e5c92ef226499aa1760d3e6d847, type: 2}
+    - target: {fileID: 6018858971719304981, guid: ba61e53e5704d6a4281150e1c0e215ac,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f9d80e5c92ef226499aa1760d3e6d847, type: 2}
+    - target: {fileID: 7246618727014394237, guid: ba61e53e5704d6a4281150e1c0e215ac,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42e13a5925902d246ae574b527161f09, type: 2}
     - target: {fileID: 8529429290064647585, guid: ba61e53e5704d6a4281150e1c0e215ac,
         type: 3}
       propertyPath: m_LocalRotation.x
