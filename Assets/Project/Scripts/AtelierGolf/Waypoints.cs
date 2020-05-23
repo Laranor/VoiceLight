@@ -51,7 +51,8 @@ public class Waypoints : MonoBehaviour
 
         if (transform.position == targetWayPoint.position)
         {
-            currentWayPoint++;
+            if (currentWayPoint < this.wayPointList.Length)
+                currentWayPoint++;
             targetWayPoint = wayPointList[currentWayPoint];
         }
     }

@@ -46,6 +46,12 @@ public class DoorGame : MonoBehaviour
     public Animator anim2;
     public Animator anim3;
     public Animator anim4;
+
+    public Transform receptacle1;
+    public Transform receptacle2;
+    public Transform receptacle3;
+    public Transform receptacle4;
+
     void Update()
     {
         if(lockNum == 1)
@@ -96,18 +102,22 @@ public class DoorGame : MonoBehaviour
             if(lockNum == 1)
             {
                 anim1.SetBool("Lock", true);
+                crystal1.transform.position = receptacle1.position + new Vector3(0,0,0.192f);
             }
             if (lockNum == 2)
             {
                 anim2.SetBool("Lock", true);
+                crystal2.transform.position = receptacle2.position + new Vector3(0, 0, 0.192f);
             }
             if (lockNum == 3)
             {
                 anim3.SetBool("Lock", true);
+                crystal3.transform.position = receptacle3.position + new Vector3(0, 0, 0.192f);
             }
             if (lockNum == 4)
             {
                 anim4.SetBool("Lock", true);
+                crystal4.transform.position = receptacle4.position + new Vector3(0, 0, 0.192f);
             }
             lockNum += 1;
             timer = 0;
@@ -116,7 +126,10 @@ public class DoorGame : MonoBehaviour
             open = true;
         if (open)
             door.transform.position += new Vector3(0, -0.05f, 0);
-
+        if(door.transform.position.y < -80)
+        {
+            Destroy(this);
+        }
     }
 
     private void OnTriggerStay(Collider other)

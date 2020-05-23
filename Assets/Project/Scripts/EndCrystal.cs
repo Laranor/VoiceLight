@@ -34,7 +34,7 @@ public class EndCrystal : MonoBehaviour
                 enable = true;
             }
         }
-        if ((avatar.transform.position - transform.position).magnitude >= distance)
+        if ((avatar.transform.position - transform.position).magnitude >= distance && text != null)
         {
             text.SetActive(false);
         }

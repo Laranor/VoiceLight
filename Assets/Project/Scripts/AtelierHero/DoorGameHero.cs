@@ -52,6 +52,10 @@ public class DoorGameHero : MonoBehaviour
             open = true;
         if (open)
             door.transform.position += new Vector3(0, -0.05f, 0);
+        if (door.transform.position.y < -80)
+        {
+            Destroy(this);
+        }
     }
 
     private void OnTriggerStay(Collider other)
