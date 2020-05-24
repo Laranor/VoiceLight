@@ -31,6 +31,9 @@ public class AvatarLighting : MonoBehaviour
     [SerializeField] private float soundIntensity;
 
     public Renderer handCrystal;
+
+    public bool intro = true;
+    public Transform introCrystal;
     void Start()
     {
         _samples = new float[QSamples];
@@ -43,8 +46,21 @@ public class AvatarLighting : MonoBehaviour
         lightSound.start();
     }
 
+    public void EndIntro()
+    {
+        intro = false;
+        handCrystal.gameObject.SetActive(true);
+        avatarLight.gameObject.transform.localPosition = Vector3.zero;
+    }
+
     void Update()
     {
+        if(intro)
+        {
+            handCrystal.gameObject.SetActive(false);
+            avatarLight.gameObject.transform.position = introCrystal.position;
+        }
+
         lightSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         AnalyzeSound();
         db.decibel = DbValue;

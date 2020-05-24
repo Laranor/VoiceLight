@@ -17,11 +17,17 @@ public class EndCrystal : MonoBehaviour
     bool yes;
     public bool baseOn;
     public Animator crystalUp;
+    public GameObject crystal;
 
     public AnimPorteFinale cinematicPorte;
-
+    public bool intro;
     void Update()
     {
+        if(intro)
+        {
+            Color finalValue = avatar.GetComponentInChildren<Light>().color * avatar.GetComponentInChildren<Light>().intensity / 2;
+            crystal.GetComponent<Renderer>().material.SetColor("_EmissionColor", finalValue);
+        }
         if ((avatar.transform.position - transform.position).magnitude < 7 && !yes && baseOn)
         {
             crystalUp.SetBool("Up", true);
@@ -33,8 +39,16 @@ public class EndCrystal : MonoBehaviour
             text.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
+                if(!intro)
+                {
+                    cinematicPorte.cinematic = true;
+                }
                 enable = true;
-                cinematicPorte.cinematic = true;
+                if(intro)
+                {
+                    avatar.GetComponentInChildren<AvatarLighting>().EndIntro();
+                    crystal.SetActive(false);
+                }
             }
         }
         if ((avatar.transform.position - transform.position).magnitude >= distance && text != null)

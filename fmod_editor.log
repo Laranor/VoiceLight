@@ -7,56 +7,13 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001952D49B598 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000248B196E038 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] SoundI::release                          : SonPourLeProto (00000194EB043488)
-[LOG] SoundI::release                          :     SonPourLeProto (00000194BE787EE8)
-[LOG] SoundI::release                          :     SonPourLeProto (00000194EB044C28)
-[LOG] SoundI::release                          :  (0000019531021478)
-[LOG] SoundI::release                          :     projetS2_02_walk_08 (00000194BE788A48)
-[LOG] SoundI::release                          :  (000001953101F1F8)
-[LOG] SoundI::release                          :     projetS2_02_walk_09 (00000194BE78AE08)
-[LOG] SoundI::release                          :  (0000019531020D48)
-[LOG] SoundI::release                          :     projetS2_02_walk_10 (00000194BE7883C8)
-[LOG] SoundI::release                          :  (000001953101FC08)
-[LOG] SoundI::release                          :     projetS2_02_walk_11 (00000194BE78A2A8)
-[LOG] SoundI::release                          :  (000001953101FA98)
-[LOG] SoundI::release                          :     projetS2_02_walk_12 (00000194BE788088)
-[LOG] SoundI::release                          :  (0000019531020EB8)
-[LOG] SoundI::release                          :     projetS2_02_walk_13 (00000194BE788568)
-[LOG] SoundI::release                          :  (00000195310215E8)
-[LOG] SoundI::release                          :     projetS2_02_walk_01 (00000194BE7888A8)
-[LOG] SoundI::release                          :  (000001953101E958)
-[LOG] SoundI::release                          :     projetS2_02_walk_02 (00000194BE788708)
-[LOG] SoundI::release                          :  (0000019531021198)
-[LOG] SoundI::release                          :     projetS2_02_walk_03 (00000194BE78AFA8)
-[LOG] SoundI::release                          :  (000001952D432D58)
-[LOG] SoundI::release                          :     projetS2_02_walk_04 (00000194BE788F28)
-[LOG] SoundI::release                          :  (000001953101EAC8)
-[LOG] SoundI::release                          :     projetS2_02_walk_05 (00000194BE789F68)
-[LOG] SoundI::release                          :  (0000019531021758)
-[LOG] SoundI::release                          :     projetS2_02_walk_06 (00000194BE788BE8)
-[LOG] SoundI::release                          :  (0000019531021BA8)
-[LOG] SoundI::release                          :     projetS2_02_walk_07 (00000194BE788D88)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 125)
@@ -67,6 +24,4 @@
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
