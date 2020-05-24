@@ -18,6 +18,8 @@ public class EndCrystal : MonoBehaviour
     public bool baseOn;
     public Animator crystalUp;
 
+    public AnimPorteFinale cinematicPorte;
+
     void Update()
     {
         if ((avatar.transform.position - transform.position).magnitude < 7 && !yes && baseOn)
@@ -32,6 +34,7 @@ public class EndCrystal : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 enable = true;
+                cinematicPorte.cinematic = true;
             }
         }
         if ((avatar.transform.position - transform.position).magnitude >= distance && text != null)
@@ -43,7 +46,7 @@ public class EndCrystal : MonoBehaviour
         {
             Destroy(text);
         }
-        if(text != null)
+        if(text != null && Camera.main != null)
         {
             text.transform.LookAt(Camera.main.transform);
             textScale.transform.localScale = scale * ((avatar.transform.position - transform.position).magnitude) / 2f;

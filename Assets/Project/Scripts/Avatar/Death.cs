@@ -20,6 +20,8 @@ public class Death : MonoBehaviour
     public Text deathText;
     Color tempColor;
 
+    public Renderer crystal;
+
     public string text;
 
     private void Start()
@@ -30,6 +32,8 @@ public class Death : MonoBehaviour
     {
         if (on)
         {
+            Color finalValue = avatarLight.color * avatarLight.intensity / 2;
+            crystal.material.SetColor("_EmissionColor", finalValue);
             timer += Time.deltaTime;
             avatarLight.range = avatarLight.intensity * 5;
             avatarLight.intensity -= 5f * Time.deltaTime;

@@ -14,6 +14,10 @@ public class SpawnEffect : MonoBehaviour {
     int shaderProperty;
 
     public Waypoints way;
+
+    public AnimPorteFinale cinematic;
+
+    private bool enable = true;
 	void Start ()
     {
         shaderProperty = Shader.PropertyToID("_cutoff");
@@ -35,6 +39,11 @@ public class SpawnEffect : MonoBehaviour {
                 timer = 0;
             }
             _renderer.material.SetFloat(shaderProperty, fadeIn.Evaluate(Mathf.InverseLerp(0, spawnEffectTime, timer)));
+        }
+        if (timer > spawnEffectTime + 1 && enable)
+        {
+            cinematic.cinematic = true;
+            enable = false;
         }
     }
 }
