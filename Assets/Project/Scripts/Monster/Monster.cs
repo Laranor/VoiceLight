@@ -59,7 +59,7 @@ public class Monster : MonoBehaviour
     {
         if(collision.gameObject.name == "Avatar")
         {
-            collision.gameObject.GetComponent<Death>().DeathReset();
+            collision.gameObject.GetComponent<Death>().DeathReset(gameObject.transform);
         }
     }
 }

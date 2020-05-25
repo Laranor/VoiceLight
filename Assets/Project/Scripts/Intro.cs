@@ -44,6 +44,7 @@ public class Intro : MonoBehaviour
             {
                 move.enabled = true;
                 mouse.enabled = true;
+                Destroy(this);
             }
         }
 

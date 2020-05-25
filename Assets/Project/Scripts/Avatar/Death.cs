@@ -26,6 +26,7 @@ public class Death : MonoBehaviour
 
     public string text;
 
+    public GameObject cam;
     private void Start()
     {
         deathText.text = text;
@@ -74,11 +75,12 @@ public class Death : MonoBehaviour
         }
     }
 
-    public void DeathReset()
+    public void DeathReset(Transform monster)
     {
         move.enabled = false;
         mouse.enabled = false;
         avatar.enabled = false;
         on = true;
+        cam.transform.LookAt(monster);
     }
 }

@@ -15,6 +15,7 @@ public class Monster2 : MonoBehaviour
 
     public Light avatarLight;
     public GameObject avatar;
+    public Transform eyes;
 
     public float intensityGoal = 1;
     [SerializeField] private float detectedIntensity;
@@ -52,7 +53,7 @@ public class Monster2 : MonoBehaviour
             colorCrystal = new Vector4(2, 2, 0, 0);
         }
         crystalFront.material.SetColor("_EmissionColor", colorCrystal);
-        if (detectedIntensity >= intensityGoal)
+        if (detectedIntensity >= intensityGoal && distance > 4)
         {
             target = avatar.transform;
             agent.speed = chasingSpeed;
@@ -69,10 +70,6 @@ public class Monster2 : MonoBehaviour
                 if (((lastAvatarPosition.transform.position - transform.position).magnitude) <= 6)
                     chasing = false;
             }
-            if (distance <= 4)
-            {
-                avatar.GetComponent<Death>().DeathReset();
-            }
         }
         else
         {
@@ -80,6 +77,11 @@ public class Monster2 : MonoBehaviour
                 changeColor -= 10 * Time.deltaTime;
             target = monsterTarget;
             agent.speed = baseSpeed;
+        }
+        if (distance <= 4)
+        {
+            avatar.GetComponent<Death>().DeathReset(eyes);
+            target = transform;
         }
         // Update destination if the target moves one unit
         if (Vector3.Distance(destination, target.position) > 1.0f)
