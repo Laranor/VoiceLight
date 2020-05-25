@@ -21,6 +21,8 @@ public class EndCrystal : MonoBehaviour
 
     public AnimPorteFinale cinematicPorte;
     public bool intro;
+
+    public bool pilier;
     void Update()
     {
         if(intro)
@@ -42,6 +44,10 @@ public class EndCrystal : MonoBehaviour
                 if(!intro)
                 {
                     cinematicPorte.cinematic = true;
+                    if (pilier)
+                        cinematicPorte.pitch = true;
+                    else
+                        cinematicPorte.hero = true;
                 }
                 enable = true;
                 if(intro)

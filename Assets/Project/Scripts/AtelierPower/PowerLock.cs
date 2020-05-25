@@ -28,6 +28,7 @@ public class PowerLock : MonoBehaviour
     public Renderer crystal2;
     public Renderer crystal3;
 
+    public AnimPorteFinale cinematic;
     private void Start()
     {
         crystal1.material.DisableKeyword("_EMISSION");
@@ -41,22 +42,27 @@ public class PowerLock : MonoBehaviour
             door.transform.position += new Vector3(0, -0.05f, 0);
         if (door.transform.position.y < -10)
         {
+            cinematic.cinematic = true;
+            cinematic.power = true;
             Destroy(this);
         }
     }
     private void OnTriggerStay(Collider other)
     {
-        if (locked1)
+        if(other.name == "Avatar")
         {
-            Unlocking(locked1, lock1, crystal1);
-        }
-        if (locked2 && !locked1)
-        {
-            Unlocking(locked2, lock2, crystal2);
-        }
-        if (locked3 && !locked2)
-        {
-            Unlocking(locked3, lock3, crystal3);
+            if (locked1)
+            {
+                Unlocking(locked1, lock1, crystal1);
+            }
+            if (locked2 && !locked1)
+            {
+                Unlocking(locked2, lock2, crystal2);
+            }
+            if (locked3 && !locked2)
+            {
+                Unlocking(locked3, lock3, crystal3);
+            }
         }
     }
 

@@ -12,10 +12,13 @@ public class Cinematic : MonoBehaviour
     public MouseLook mouse;
     public AvatarLighting avatar;
 
+
+
     void Start()
     {
         script = GetComponentInChildren<TestAudio>();
         anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class Cinematic : MonoBehaviour
             mouse.enabled = false;
             avatar.enabled = false;
         }
+
     }
     private void OnDestroy()
     {

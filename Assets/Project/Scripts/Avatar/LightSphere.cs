@@ -12,15 +12,19 @@ public class LightSphere : MonoBehaviour
     private float frequencyColor = 0;
     public AvatarLighting avatar;
 
+    public Color lowPitch;
+    public Color highPitch;
+
+    public float seuilPitch;
     private void Start()
     {
         gradient = new Gradient();
 
         // Populate the color keys at the relative time 0 and 1 (0 and 100%)
         colorKey = new GradientColorKey[2];
-        colorKey[0].color = new Vector4(1,1,1,1);
+        colorKey[0].color = lowPitch;
         colorKey[0].time = 0.0f;
-        colorKey[1].color = new Vector4(1, 1, 0.7f, 1);
+        colorKey[1].color = highPitch;
         colorKey[1].time = 1.0f;
 
         // Populate the alpha  keys at relative time 0 and 1  (0 and 100%)
@@ -37,7 +41,10 @@ public class LightSphere : MonoBehaviour
     void Update()
     {
         gameObject.GetComponent<SphereCollider>().radius = avatarLight.range;
-        frequencyColor = avatar.PitchValue / 2000;
+        if (avatar.PitchValue < seuilPitch)
+            frequencyColor = avatar.PitchValue / seuilPitch;
+        else
+            frequencyColor = 1;
         avatarLight.color = gradient.Evaluate(frequencyColor);
     }
 }

@@ -43,6 +43,7 @@ public class SpawnEffect : MonoBehaviour {
         if (timer > spawnEffectTime + 1 && enable)
         {
             cinematic.cinematic = true;
+            cinematic.golf = true;
             enable = false;
         }
     }

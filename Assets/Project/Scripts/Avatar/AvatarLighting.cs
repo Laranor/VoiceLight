@@ -57,8 +57,8 @@ public class AvatarLighting : MonoBehaviour
     {
         if(intro)
         {
-            handCrystal.gameObject.SetActive(false);
-            avatarLight.gameObject.transform.position = introCrystal.position;
+            //handCrystal.gameObject.SetActive(false);
+            //avatarLight.gameObject.transform.position = introCrystal.position;
         }
 
         lightSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));

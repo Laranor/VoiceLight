@@ -7,7 +7,7 @@ public class Monster : MonoBehaviour
 {
     public Transform target;
     public Transform monsterTarget;
-    public List<Transform> targets;
+    public List<Transform> monsterDestination;
     int i = 0;
     Vector3 destination;
     NavMeshAgent agent;
@@ -19,7 +19,7 @@ public class Monster : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         detection = GetComponent<SoundDetection>();
         destination = agent.destination;
-        monsterTarget = targets[0];
+        monsterTarget = monsterDestination[0];
     }
 
     void Update()
@@ -46,13 +46,13 @@ public class Monster : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.transform == targets[i] && ((other.transform.position - transform.position).magnitude) <= 3)
+        if (other.transform == monsterDestination[i] && ((other.transform.position - transform.position).magnitude) <= 3)
         {
             i += 1;
-            if (i == targets.Count)
+            if (i == monsterDestination.Count)
                 i = 0;
 
-            monsterTarget = targets[i];
+            monsterTarget = monsterDestination[i];
         }
     }
     private void OnCollisionEnter(Collision collision)
