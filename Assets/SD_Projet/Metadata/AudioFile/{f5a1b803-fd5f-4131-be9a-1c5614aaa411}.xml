@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{f5a1b803-fd5f-4131-be9a-1c5614aaa411}">
 		<property name="assetPath">
-			<value>New Folder/Partiel_SD_Trigger2_03.wav</value>
+			<value>Partiel_SD_Trigger2_03.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

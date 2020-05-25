@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{4c1da0cf-1934-45be-9a41-78967cb8d776}">
 		<property name="assetPath">
-			<value>New Folder/projetS2_02_walk_04.wav</value>
+			<value>projetS2_02_walk_04.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

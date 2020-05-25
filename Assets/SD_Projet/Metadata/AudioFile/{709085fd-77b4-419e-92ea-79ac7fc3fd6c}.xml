@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{709085fd-77b4-419e-92ea-79ac7fc3fd6c}">
 		<property name="assetPath">
-			<value>New Folder/ProjS2_01_Light_intensity_04.wav</value>
+			<value>ProjS2_01_Light_intensity_04.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
