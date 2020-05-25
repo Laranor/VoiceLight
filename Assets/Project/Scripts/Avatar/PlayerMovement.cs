@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float jumpHeight = 2f;
 
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Vector3 inputs = Vector3.zero;
@@ -15,11 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask dontReloadMask;
 
-    [SerializeField] private bool isBeingLaunched;
-    [SerializeField] private float launchTime = 0;
-    private float launchTimer;
-
-    [SerializeField] private float fallSpeed = 10;
 
     private FMOD.Studio.EventInstance walkSound;
     [SerializeField] private bool walking = true;

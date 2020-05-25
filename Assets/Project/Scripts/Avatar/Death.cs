@@ -18,7 +18,9 @@ public class Death : MonoBehaviour
     public AvatarLighting avatar;
 
     public Text deathText;
+    public Image deathImage;
     Color tempColor;
+    Color tempColorImage;
 
     public Renderer crystal;
 
@@ -38,10 +40,16 @@ public class Death : MonoBehaviour
             avatarLight.range = avatarLight.intensity * 5;
             avatarLight.intensity -= 5f * Time.deltaTime;
             tempColor = deathText.color;
+            tempColorImage = deathImage.color;
             if (tempColor.a < 1)
             {
                 tempColor.a += 0.2f * Time.deltaTime;
                 deathText.color = tempColor;
+            }
+            if (tempColorImage.a < 1)
+            {
+                tempColorImage.a += 0.5f * Time.deltaTime;
+                deathImage.color = tempColorImage;
             }
 
         }
@@ -58,6 +66,11 @@ public class Death : MonoBehaviour
         {
             tempColor.a -= 1f * Time.deltaTime;
             deathText.color = tempColor;
+        }
+        if (!on && tempColorImage.a > 0)
+        {
+            tempColorImage.a -= 1f * Time.deltaTime;
+            deathImage.color = tempColorImage;
         }
     }
 

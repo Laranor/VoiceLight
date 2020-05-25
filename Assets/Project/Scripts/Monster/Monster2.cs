@@ -99,11 +99,4 @@ public class Monster2 : MonoBehaviour
             monsterTarget = monsterDestination[i];
         }
     }
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "Avatar")
-        {
-            collision.gameObject.GetComponent<Death>().DeathReset();
-        }
-    }*/
 }
