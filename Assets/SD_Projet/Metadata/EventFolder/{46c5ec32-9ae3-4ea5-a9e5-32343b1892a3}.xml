@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{46c5ec32-9ae3-4ea5-a9e5-32343b1892a3}">
+		<property name="name">
+			<value>Atelier 03 Escorte</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a1dd9497-0ad2-4815-9284-c0590a1cbfb2}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{5cb3d2f4-a7ac-41f3-b4d6-65f1502d370c}">
+		<property name="name">
+			<value>Atelier 02 Cristal Hero</value>
+		</property>
+		<relationship name="folder">
+			<destination>{36333204-8e55-40b2-ac09-eee036efb375}</destination>
+		</relationship>
+	</object>
+</objects>

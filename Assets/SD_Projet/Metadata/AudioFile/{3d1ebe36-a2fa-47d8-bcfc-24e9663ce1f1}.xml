@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{3d1ebe36-a2fa-47d8-bcfc-24e9663ce1f1}">
 		<property name="assetPath">
-			<value>346212__inspectorj__door-squeak-normal-d.wav</value>
+			<value>New Folder/346212__inspectorj__door-squeak-normal-d.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

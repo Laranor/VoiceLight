@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="Snapshot" id="{2fb9ebf7-853f-44ca-9769-9e19586f3701}">
+		<property name="name">
+			<value>Cave_Petite</value>
+		</property>
+		<relationship name="mixer">
+			<destination>{31ecb6a3-dd44-4fcb-a84b-df02f91059b0}</destination>
+		</relationship>
+		<relationship name="automatableProperties">
+			<destination>{0523dd3e-d73d-4fc1-aba4-546762da8e99}</destination>
+		</relationship>
+		<relationship name="markerTracks">
+			<destination>{c299c4bb-0739-4d0f-8068-86a404f6c988}</destination>
+		</relationship>
+		<relationship name="timeline">
+			<destination>{b5361a08-0682-4a54-b4a9-a764c7d11043}</destination>
+		</relationship>
+		<relationship name="snapshotMasterTrack">
+			<destination>{ad09114a-c0bc-4fe1-9d7d-4941e620e13b}</destination>
+		</relationship>
+	</object>
+	<object class="EventAutomatableProperties" id="{0523dd3e-d73d-4fc1-aba4-546762da8e99}" />
+	<object class="MarkerTrack" id="{c299c4bb-0739-4d0f-8068-86a404f6c988}" />
+	<object class="Timeline" id="{b5361a08-0682-4a54-b4a9-a764c7d11043}" />
+	<object class="SnapshotMasterTrack" id="{ad09114a-c0bc-4fe1-9d7d-4941e620e13b}" />
+</objects>
